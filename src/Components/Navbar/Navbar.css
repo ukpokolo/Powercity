@@ -1,65 +1,110 @@
-.navbar{
+.navbar {
     display: flex;
-    height: 50px;
+    height: 45px;
     padding: 10px 20px;
     justify-content: space-between;
+    background-color: #fff;
 }
 
-.nav-left{
+.nav-left {
     display: flex;
     gap: 60px;
+    position: relative;
 }
 
-.navbar-logo{
+.navbar-logo {
     display: flex;
     align-items: center;
 }
 
-.navbar-gif img{
+.navbar-gif img {
     width: 50px;
-
 }
 
-.navbar-image img{
+.navbar-image img {
     width: 90px;
 }
 
-.nav-list{
+.nav-list {
     display: flex;
     gap: 15px;
     align-items: center;
 }
 
-.nav-left li{
-    list-style: none;    
+.nav-list li {
+    list-style: none;
     padding: 8px 12px;
     font-size: 15px;
 }
 
-.nav-left li:hover{
+.nav-list li:hover {
     background-color: #DBE9FF;
     border-radius: 25px;
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.nav-right{
+.nav-right {
     display: flex;
     align-items: center;
 }
 
-.nav-right button{
+.nav-right button {
     background-color: #70A5FA;
     border-radius: 25px;
     border: none;
     padding: 8px 12px;
     font-size: 13px;
     text-transform: uppercase;
-    font-weight:bolder;
+    font-weight: bolder;
+}
+
+.nav-burger {
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    padding: 12px;
+    display: none;
+}
+
+.nav-burger div {
+    width: 15px;
+    border: 1px solid black;
+    margin-top: 4px;
 }
 
 @media (max-width: 1309px) {
-    .navbar-logo{
+    .navbar-logo {
         display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .nav-burger {
+        display: flex;
+    }
+
+    .nav-list {
+        position: absolute;
+        flex-direction: column;
+        gap: 0px;
+        top: 60px;
+        left: -5px;
+        background-color: #fff;
+        width: 150px;
+        align-items: flex-start;
+        border-radius: 12px;
+        height: 170px;
+        padding-top: 10px;
+        display: none; /* Hide by default on smaller screens */
+    }
+
+    .nav-list.show {
+        display: flex; /* Show when toggled */
+    }
+
+    .nav-list li {
+        margin-left: -30px;
+        width: 100%;
     }
 }
