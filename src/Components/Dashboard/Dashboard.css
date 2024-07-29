@@ -1,3 +1,333 @@
 .dashboard{
-    background-color: #F5F9FF;
+  background-color: #F5F9FF;
 }
+.dashboard-con{
+    padding: 105px 0;
+    margin: 0 auto;
+    width: 100%;
+    
+}
+
+.welcome{
+    background-color: #DBE9FF;
+    border-radius: 25px;
+    padding: 20px;
+    max-width: 630px;
+    margin: 0 auto;
+}
+
+.dashboard-header{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.welcome p{
+    font-size: 15px;
+    opacity: .7;
+    padding-top: 10px;
+}
+
+.prices-con{
+    display: flex;
+    gap: 17px;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+.prices-box{
+    background-color: #FFFFFF; 
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px 0;   
+    flex: 1 1 30%;
+}
+
+.prices-box p{
+    padding: 0;
+}
+
+.prices-box h2{
+    font-size: 15px;
+    font-weight: 400;
+    opacity: .7;
+}
+
+.prices-box .pb-bold{
+    font-weight: bolder;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+.prices-box .pb-text{
+    
+    font-size: 15px;
+}
+
+.instant-stake{
+    background-color: #DBE9FF;
+    border-radius: 25px;
+    padding: 20px;    
+    max-width: 630px;
+    margin: 20px auto;
+}
+
+.instant-stake h1{ 
+    text-align: center;
+}
+.dashboard-text{
+    text-align: center;
+    font-size: 15px;
+    opacity: .7;
+    padding-top: 10px;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.instant-stake-tab ul{
+    display: flex;
+    gap: 20px;
+}
+
+.instant-stake-tab li{
+    list-style: none;
+}
+
+.ist-bottom{
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 25px;
+}
+
+.ist-search-head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ist-bottom input{
+    width: 92%;
+    height: 3rem;
+    padding: 0 1rem;
+    font-size: 1rem;
+    border-radius: 35px;
+    border-width: 0.1px;
+    margin-top: 10px;
+    line-height: 1.5rem;
+    border-color: rgba(0, 0, 0, 0.3);
+}
+
+.instant-stake-tab li{
+  padding: 8px 8px 19px 8px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: -10px;
+  cursor: pointer;
+  opacity: .7;
+}
+.instant-stake-tab li:hover{
+    opacity: 1;
+}
+
+.instant-stake-tab li.active{
+  background-color: #FFFFFF;
+  
+}
+
+.ist-search-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.instant-stake button{
+    background-color: #70A5FA;
+    border-radius: 25px;
+    border: none;
+    padding: 17px 12px;
+    font-size: .875rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.ist-bottom p{
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+.reward-pool{
+    background-color: #DBE9FF;
+    border-radius: 25px;
+    padding: 20px;
+    max-width: 630px;
+    margin: 10px auto;
+}
+
+.reward-pool .dashboard-header{
+    text-align: center;
+}
+
+.pool-chart {
+    height: 200px; /* Set the height for the chart container */
+    width: 85%; /* Ensure the chart container takes full width */
+    margin: 0 auto;
+  }
+
+  .tab-list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    
+  }
+  
+  /* .tab-item {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .tab-item.active {
+    background-color: white;
+    border-radius: 5px;
+  }
+   */
+
+   /* Style for the tabs */
+.pool-tab ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 30px;
+    padding-top: 10px;
+    margin-bottom: -5px;
+  }
+  
+  .pool-tab li {
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .pool-tab li.active {
+    background-color: white;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  
+  /* Style for the chart container */
+  .pool-chart {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  /* General style for headers and text */
+  .dashboard-header {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .dashboard-text {
+    font-size: 14px;
+    color: #666;
+  }
+  
+
+  .custom-tooltip {
+    width: 10px; /* Adjust this value as needed */
+    word-wrap: break-word; /* Ensure long words break to fit within the width */
+  }
+
+  @media (min-width: 1024px) {
+    .dashboard-con {
+      max-width: 950px;
+        display: grid;
+        grid-template-areas: 
+          "item1 item2"
+          "item3 item3"
+          "item4 item5";
+        grid-gap: 20px; /* Adjust gap between items as needed */
+      }
+
+      .welcome{
+        grid-area: item1;
+      }
+
+      .instant-stake{
+        grid-area: item2;
+        margin: 0 auto;
+        max-width: 400px;
+      }
+
+      .dashboard-con .reward-pool:nth-of-type(3) {
+        grid-area: item3;
+      }
+      
+      .dashboard-con .reward-pool:nth-of-type(4) {
+        grid-area: item4;
+      }
+      
+      .dashboard-con .reward-pool:nth-of-type(5) {
+        grid-area: item5;
+        
+      }
+
+      .reward-pool{
+        min-width: 93%;
+        margin: 0 auto;
+      }
+
+      .prices-box{
+        padding: 15px 0;   
+    }
+    .prices-box .pb-bold{
+      font-size: 1.9rem;
+  }
+  }
+
+  @media (min-width: 1300px) {
+    .dashboard-con {
+      max-width: 1300px; /* Adjust max-width to accommodate all items side by side */
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+      grid-template-rows: auto auto; /* Two rows */
+      grid-template-areas: 
+        "item1 item1 item2"
+        "item3 item4 item5";
+      grid-gap: 20px; /* Adjust gap between items as needed */
+    }
+  
+    .welcome {
+      grid-area: item1;
+      min-width: 800px;
+    }
+  
+    .instant-stake {
+      grid-area: item2;
+      margin: 0 auto;
+      max-width: 400px;
+    }
+  
+    .dashboard-con .reward-pool:nth-of-type(3) {
+      grid-area: item3;
+    }
+  
+    .dashboard-con .reward-pool:nth-of-type(4) {
+      grid-area: item4;
+    }
+  
+    .dashboard-con .reward-pool:nth-of-type(5) {
+      grid-area: item5;
+    }
+  
+    .reward-pool {
+      min-width: 90%;
+    }
+  }
+  
+
+

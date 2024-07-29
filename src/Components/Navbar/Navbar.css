@@ -4,6 +4,13 @@
     padding: 10px 20px;
     justify-content: space-between;
     background-color: #fff;
+    position: fixed; /* Stay at the top while scrolling */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure it's on top of everything else */
+    background-color: #fff; /* Background color to cover content underneath */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
 }
 
 .nav-left {
@@ -47,6 +54,7 @@
 .nav-right {
     display: flex;
     align-items: center;
+    padding-right: 2%;
 }
 
 .nav-right button {
@@ -97,6 +105,7 @@
         height: 170px;
         padding-top: 10px;
         display: none; /* Hide by default on smaller screens */
+        z-index: 1000; /* Ensure it's on top of everything else */
     }
 
     .nav-list.show {
@@ -108,3 +117,4 @@
         width: 100%;
     }
 }
+

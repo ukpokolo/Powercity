@@ -1,0 +1,171 @@
+.collector{
+    background-color: #F5F9FF;
+}
+
+.collector-con{
+    padding: 105px 30px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.collector-left{    
+    background-color: #DBE9FF;
+    padding: 20px;
+    border-radius: 25px;
+    position: relative;
+}
+
+.collector-link{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+.collector-head{
+    font-size: 1.4em;
+    font-weight: 450;
+    padding-bottom: 17px;
+}
+
+.collector-text{
+    font-size: 15px;
+    opacity: .7;
+    padding-bottom: 17px;
+}
+
+.collect-btn{
+    width: 100%;
+    justify-content: end;
+    display: flex;
+    
+}
+.collect-fees{
+    border: none;
+    height: 3rem;
+    border-radius: 25px;
+    background-color: #F5F9FF;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.earn-protocol h1{
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.earn-protocol{
+    background-color: #FFFFFF;
+    border-radius: 25PX;
+    padding: 30px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.earn-protocol table{
+    width: 100%;
+}
+
+.earn-protocol thead th{
+    text-align: left;
+    opacity: .7;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.earn-protocol th,
+.earn-protocol td {
+    padding: 12px 15px;
+}
+
+.earn-protocol tbody td{
+    border-top: 1px solid #F5F9FF;
+}
+.earn-protocol tbody tr:hover{
+    background-color: #F5F9FF;
+}
+
+.collector-right{
+    background-color: #DBE9FF;
+    padding: 20px;
+    border-radius: 25px;
+    max-width: 450px;
+}
+
+.collector-first-card{
+    background-color: #FFFFFF;
+    display: flex;
+    padding: 0   20px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.cfc-left{
+    width: 100%;
+    padding-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cfc-right{
+    text-align: left;
+    width: 100%;
+    padding-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.collector-hr{
+    opacity: .7;
+    margin-right: 20px;
+}
+
+.collector-first-card h1{
+    opacity: .7;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+
+
+.cfc-bold{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.collector-second-card{
+    background-color: #FFFFFF;
+    display: flex;
+    padding: 0 20px 20px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.csc-text{
+    font-size: 15px;
+}
+
+@media (min-width:1024px) {
+    .collect-btn{
+        height: 50px;
+        position: relative;
+    }
+    .collect-fees{
+        position: fixed;
+    }
+    
+}
+@media (min-width:1278px) {
+    .collector-con{
+        flex-direction: row;
+    }
+    .collector-first-card{
+        width: 350px;
+    }
+}

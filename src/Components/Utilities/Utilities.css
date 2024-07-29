@@ -1,0 +1,262 @@
+.utilities{
+    background-color: #F5F9FF;
+}
+
+.utilities-con{
+    padding: 105px 0;
+    margin: 0 auto;
+    max-width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.utilities-left{
+    background-color: #DBE9FF;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.utilities h1{
+    font-size: 1.4em;
+    font-weight: 400;
+    padding-bottom: 17px;
+}
+
+.utilities-text{
+    font-size: 15px;
+    opacity: .7;
+    padding-bottom: 17px;
+}
+
+.utilities-top{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.utilites-top-card{
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.utc-balance{
+    display: flex;
+    justify-content: space-between;
+}
+
+.utc-text{
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.utc-right{
+    text-align: right;
+}
+
+.grey{
+    opacity: .7;
+    padding-left: 5px;
+}
+
+.utc-button{
+    background-color: rgba(219, 233, 255, .5);
+    border: none;
+    width: 100%;
+    height: 55px;
+    font-weight: bolder;
+    border-radius: 25px;
+    margin-top: 17px;
+}
+
+.utilities-left-con{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.utilities-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.utilities-bottom-left{    
+    padding: 20px;
+    border-radius: 25px;    
+    background-color: #FFFFFF;
+}
+
+.up-text{
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.utilities-pairs{
+        display: flex;
+        justify-content: space-between;
+}
+
+.utilities-pairs-right{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.upr-button{
+    padding: 0 .75rem;
+    background-color: rgba(219, 233, 255, .5);
+    border: none;
+    height: 25px;
+    border-radius: 25px;
+    font-weight: 800;
+}
+
+.metamask-table{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mmt-left{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.mmt-right{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.mmf-button{
+    background-color: rgba(219, 233, 255, .5);
+    border: none;
+    height: 25px;
+    border-radius: 25px;
+    font-weight: 800;
+}
+
+.utilities-bottom-right{
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 25px;
+    height: 500px;
+}
+
+.ubr-space{
+    padding: 20px;
+    background-color: rgba(219, 233, 255, .5);
+    height: 80%;  
+    border-radius: 25px; 
+}
+
+.utilities-right{
+    background-color: #DBE9FF;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.utilities-right-card{
+    background-color: #FFFFFF;
+    display: flex;
+    padding: 0   20px;
+    border-radius: 20px;
+}
+
+.utilities-card-con{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hr{
+    opacity: .7;
+    margin-right: 20px;
+}
+
+.urc-left{
+    width: 100%;
+    padding-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.urc-right{
+    text-align: left;
+    width: 100%;
+    padding-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.urc-head{
+    opacity: .7;
+    font-size: 17px;
+}
+
+.urc-text{
+    opacity: .7;
+    font-size: 14px;
+}
+
+.urc-bold{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.gas-price{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.statistics-text{
+    font-size: 15px;
+}
+
+
+@media (min-width:800px) {
+    .utilities-con{
+        max-width: 730px;
+    }
+}
+@media (min-width:1024px) {
+    .utilities-con{
+        max-width: 930px;
+    }
+    .utilities-top{
+        flex-direction: row;
+    }
+    .utilities-bottom{
+        flex-direction: row;
+    }
+    .utilities-bottom-left{
+        width: 60%;
+    }
+    .utilities-bottom-right{
+        width: 40%;
+        height: 650px;
+    }
+}
+@media (min-width:1280px) {
+    .utilities-con{
+        flex-direction: row;
+        max-width: 100%;
+        margin: 0 auto;
+        gap: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .utilities-left{
+        width: 70%;
+        
+    }
+    .utilities-right{
+        width: 35%;
+
+    }
+}
