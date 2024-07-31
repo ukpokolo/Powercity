@@ -40,8 +40,20 @@
 
 .nav-list li {
     list-style: none;
-    padding: 8px 12px;
+    padding: 8px 12px 8px 25px;
     font-size: 15px;
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.nav-list li svg    {
+    width: 20px;
+    position: absolute;
+    left: 0;
+    
 }
 
 .nav-list li:hover {
@@ -79,6 +91,13 @@
     width: 15px;
     border: 1px solid black;
     margin-top: 4px;
+}
+
+
+.nav-link{
+    
+    text-decoration: none;
+    color: #000;
 }
 
 @media (max-width: 1309px) {

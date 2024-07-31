@@ -291,7 +291,7 @@
 
   @media (min-width: 1300px) {
     .dashboard-con {
-      max-width: 1300px; /* Adjust max-width to accommodate all items side by side */
+      max-width: 95%; /* Adjust max-width to accommodate all items side by side */
       display: grid;
       grid-template-columns: repeat(3, 1fr); /* Three equal columns */
       grid-template-rows: auto auto; /* Two rows */
@@ -303,7 +303,7 @@
   
     .welcome {
       grid-area: item1;
-      min-width: 800px;
+      min-width: 100%;
     }
   
     .instant-stake {

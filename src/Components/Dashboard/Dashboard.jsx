@@ -167,6 +167,7 @@ function Dashboard() {
           {[...Array(6)].map((_, i) => (
             <div className="prices-box" key={i}>
               <h2>WATT Price</h2>
+              
               <h1 className="pb-bold">$0.00097090</h1>
               <p className="pb-text">The Price of one WATT token</p>
             </div>
