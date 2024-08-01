@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import { curveCardinal } from 'd3-shape';
 import './Dashboard.css';
+import watt_logo from '../assets/watt.svg'
 
 function Dashboard() {
   const generateData = (interval) => {
@@ -167,7 +168,6 @@ function Dashboard() {
           {[...Array(6)].map((_, i) => (
             <div className="prices-box" key={i}>
               <h2>WATT Price</h2>
-              
               <h1 className="pb-bold">$0.00097090</h1>
               <p className="pb-text">The Price of one WATT token</p>
             </div>
@@ -202,7 +202,11 @@ function Dashboard() {
             <p>{activeTabInstantStake === 'watt' ? 'WATT Amount' : 'PLP Amount'}</p>
             <p>$0</p>
           </div>
+          <div className="dashboard-search">
           <input type="text" />
+          <img src={watt_logo} alt="" />
+          </div>
+          
           <div className="ist-search-bottom">
             <div className="ist-sb-left">
               <p>{activeTabInstantStake === 'watt' ? 'Your WATT Balance:' : 'Your PLP Balance:'}</p>

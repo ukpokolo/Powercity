@@ -8,6 +8,16 @@
     
 }
 
+.dashboard-search {
+    position: relative;
+}
+.dashboard-search img{
+  width: 45px;
+  position: absolute;
+  right: 3%;
+  top: 12px;
+}
+
 .welcome{
     background-color: #DBE9FF;
     border-radius: 25px;
@@ -31,7 +41,7 @@
     display: flex;
     gap: 17px;
     padding-top: 20px;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .prices-box{
@@ -243,6 +253,10 @@
   }
 
   @media (min-width: 1024px) {
+    .dashboard-search img{
+      right: 0px;
+      
+    }
     .dashboard-con {
       max-width: 950px;
         display: grid;
@@ -287,6 +301,12 @@
     .prices-box .pb-bold{
       font-size: 1.9rem;
   }
+
+  .prices-con{
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
   }
 
   @media (min-width: 1300px) {
