@@ -131,6 +131,26 @@
     font-weight: 400;
 }
 
+.cfc-left svg{
+ width: 15px;
+ color: #60A5FA;
+}
+.cfc-right svg{
+    width: 15px;
+   }
+.collect-fees {
+    position: relative;
+}
+.collect-fees svg{
+    width: 17px;
+    color: #60A5FA;
+    position: absolute;
+}
+
+.collect-fees span{
+    padding-left: 25px;
+}
+
 
 
 .cfc-bold{

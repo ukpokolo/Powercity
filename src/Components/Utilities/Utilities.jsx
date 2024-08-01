@@ -28,8 +28,8 @@ function Utilities() {
                         <p className='utilities-text'>With POWERCITY Wrapper you can wrap your $PLS directly into the $WPLS Token. Or you can unwrap your $WPLS back into $PLS.</p>
                         <div className="utc-balance">
                           <div className="utc-left">
-                            <p className='utc-text'><span><img src={wpls} alt="" /></span>WPLS balance:</p>
-                            <p className='utc-text'><span><img src={pulse} alt="" /></span>PLS balance:</p>
+                            <p className='utc-text'><img src={wpls} alt="" /><span className='space'>WPLS balance:</span></p>
+                            <p className='utc-text'><img src={pulse} alt="" /><span className='space'>PLS balance:</span></p>
                           </div>
                           <div className="utc-right">
                             <p className='utc-text'>0<span className="grey">WPLS</span> </p>
@@ -39,19 +39,19 @@ function Utilities() {
                         <button className="utc-button">USE WRAPPER</button>
                     </div>
                     <div className="utilites-top-card">
-                        <h1>Wrapper</h1>
-                        <p className='utilities-text'>With POWERCITY Wrapper you can wrap your $PLS directly into the $WPLS Token. Or you can unwrap your $WPLS back into $PLS.</p>
+                        <h1>Zapper</h1>
+                        <p className='utilities-text'>With POWERCITY Zapper you can 'zap' your $PLS directly into the WATT-PLS Liquidity Pool from here. You can zap-in (receive $PLP). You get a 50% bonus for staking $PLP vs. $WATT.</p>
                         <div className="utc-balance">
                           <div className="utc-left">
-                            <p className='utc-text'><span><img src={plp} alt="" /></span>WPLS balance:</p>
-                            <p className='utc-text'><span><img src={watt} alt="" /></span>PLS balance:</p>
+                            <p className='utc-text'><img src={plp} alt="" /><span className='space'>PLP balance:</span></p>
+                            <p className='utc-text'><img src={watt} alt="" /><span className='space'>WATT balance:</span></p>
                           </div>
                           <div className="utc-right">
-                            <p className='utc-text'>0<span className="grey">WPLS</span> </p>
-                            <p className='utc-text'>0 <span className="grey">PLS</span></p>
+                            <p className='utc-text'>0<span className="grey">PLP</span> </p>
+                            <p className='utc-text'>0 <span className="grey">WATT</span></p>
                           </div>
                         </div>
-                        <button className="utc-button">USE WRAPPER</button>
+                        <button className="utc-button">USE ZAPPER</button>
                     </div>                    
                 </div>  
                 <div className="utilities-bottom">
@@ -60,12 +60,12 @@ function Utilities() {
                     <p className="utilities-text">Use the below buttons to buy $Watt on PortalX or add liquidity on PulseX</p>
                     <div className="utilities-pairs">
                       <div className="utilities-pairs-left">
-                        <p className="up-text"><span><img src={plp} alt="" /></span>Add WATT-PLS Pair:</p>
-                        <p className="up-text"><span><img src={swapwattx} alt="" /></span>Buy WATT:</p>
+                        <p className="up-text"><img src={plp} alt="" /><span>Add WATT-PLS Pair:</span></p>
+                        <p className="up-text"><img src={swapwattx} alt="" /><span>Buy WATT:</span></p>
                       </div>
                       <div className="utilities-pairs-right">
-                        <button className="upr-button">ADD ON PULSEX</button>
-                        <button className="upr-button">BUY ON PORTALX</button>
+                        <button className="upr-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path></svg><span>ADD ON PULSEX</span></button>
+                        <button className="upr-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path></svg><span>ADD ON PULSEX</span></button>
                       </div>
                     </div>
                     <h1>MetaMask Features</h1>
@@ -84,16 +84,16 @@ function Utilities() {
                         <p className="up-text"><img src={metamask} alt="" /><span>Import your NFTs in MetaMask</span></p>
                       </div>
                       <div className="mmt-right">
-                        <button className="mmf-button">ADD</button>
-                        <button className="mmf-button">ADD</button>
-                        <button className="mmf-button">ADD</button>
-                        <button className="mmf-button">ADD</button>
-                        <button className="mmf-button">ADD</button>
-                        <button className="mmf-button">ADD</button>
-                        <button className="mmf-button">ADD</button>
-                        <button className="mmf-button">ADD</button>
-                        <button className="mmf-button">ADD</button>
-                        <button className="mmf-button">ADD</button>
+                        <button className="mmf-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>ADD</span></button>
+                        <button className="mmf-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>ADD</span></button>
+                        <button className="mmf-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>ADD</span></button>
+                        <button className="mmf-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>ADD</span></button>
+                        <button className="mmf-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>ADD</span></button>
+                        <button className="mmf-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>ADD</span></button>
+                        <button className="mmf-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>ADD</span></button>
+                        <button className="mmf-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>ADD</span></button>
+                        <button className="mmf-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>ADD</span></button>
+                        <button className="mmf-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75"></path></svg><span>COPY CONTRACT</span></button>
                       </div>
                     </div>
                   </div>
@@ -117,48 +117,49 @@ function Utilities() {
               <div className="utilities-right-card" style={{height:'125px'}}>
                 <div className="urc-left">
                   <p className="urc-head">WATT Price</p>
-                  <p className="urc-bold">$0.00092699</p>
+                  <p className="urc-bold">$0.00093009</p>
                   <p className="urc-text">POWERCITY Token</p>
                 </div>
                 <hr className='hr' />
                 <div className="urc-right">
                   <p className="urc-head">PLS Price</p>
-                  <p className="urc-bold">$0.00092699</p>
+                  <p className="urc-bold">$0.00004426</p>
                   <p className="urc-text">PluseChain Native</p>
                 </div>
               </div>
               <div className="utilities-right-card"  style={{height:'125px'}}>
                 <div className="urc-left">
-                  <p className="urc-head">WATT Price</p>
-                  <p className="urc-bold">$0.00092699</p>
-                  <p className="urc-text">POWERCITY Token</p>
+                  <p className="urc-head">PLSX Price</p>
+                  <p className="urc-bold">$0.00002502</p>
+                  <p className="urc-text">PulseX Token</p>
                 </div>
                 <hr className='hr' />
                 <div className="urc-right">
-                  <p className="urc-head">PLS Price</p>
-                  <p className="urc-bold">$0.00092699</p>
-                  <p className="urc-text">PluseChain Native</p>
+                  <p className="urc-head">PLP Price</p>
+                  <p className="urc-bold">$0.00040114</p>
+                  <p className="urc-text">WATT/PLS Pool Token</p>
                 </div>
               </div>
               <div className="utilities-right-card gas-price ">
                 <div className="urc-left">
-                  <p className="statistics-text">Gas Price</p>
-                  <p className="statistics-text">Gas Price</p>
-                  <p className="statistics-text">Gas Price</p>
-                  <p className="statistics-text">Gas Price</p>
-                  <p className="statistics-text">Gas Price</p>
-                  <p className="statistics-text">Gas Price</p>
-                  <p className="statistics-text">Gas Price</p>
-
+                <p className="statistics-text">Gas Price</p>
+                        <p className="statistics-text">Market Cap</p>
+                        <p className="statistics-text">Total WATT Locked <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path></svg></span></p>
+                        <p className="statistics-text">Total PLP Locked <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path></svg></span></p>
+                        <p className="statistics-text">Total WATT Circulating <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path></svg></span></p>
+                        <p className="statistics-text">Total AMP Supply <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path></svg></span></p>
+                        <p className="statistics-text">Reward Pool <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path></svg></span></p>
+                        
                 </div>
                 <div className="urc-right">
-                  <p className="statistics-text">295,903</p>
-                  <p className="statistics-text">295,903</p>
-                  <p className="statistics-text">295,903</p>
-                  <p className="statistics-text">295,903</p>
-                  <p className="statistics-text">295,903</p>
-                  <p className="statistics-text">295,903</p>
-                  <p className="statistics-text">295,903</p>
+                
+                <p className="statistics-text"><span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"></path></svg></span>428,977</p>
+                        <p className="statistics-text">$2,082,993</p>
+                        <p className="statistics-text">2,234,070,745</p>
+                        <p className="statistics-text">344,332,418</p>
+                        <p className="statistics-text">208,455,625</p>
+                        <p className="statistics-text">75,403</p>
+                        <p className="statistics-text">$188,634</p>
                 </div>
               </div>
               </div>
@@ -167,23 +168,34 @@ function Utilities() {
               <p className="utilities-text">The CORE assets currently in your wallet</p>
               <div className="utilities-right-card gas-price">
                 <div className="urc-left">
-                  <p className="statistics-text">Gas Price</p>
-                  <p className="statistics-text">Gas Price</p>
-                  <p className="statistics-text">Gas Price</p>
-                  <p className="statistics-text">Gas Price</p>
-                  <p className="statistics-text">Gas Price</p>
-                  <p className="statistics-text">Gas Price</p>
-                  <p className="statistics-text">Gas Price</p>
-
+                <p className="statistics-text">WATT Balance</p>
+                        <p className="statistics-text">PLP Balance <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path></svg></span></p>
+                        <p className="statistics-text">PLS Balance</p>
+                        <p className="statistics-text">WPLS Balance</p>
+                        <p className="statistics-text">PLSX Balance</p>
+                        <p className="statistics-text">PXDC Balance</p>
+                        <p className="statistics-text">HEXDC Balance</p>
+                        <p className="statistics-text">HEX Balance</p>
+                        <p className="statistics-text">USDL Balance</p>
+                        <p className="statistics-text">LOAN Balance</p>
+                        <p className="statistics-text">NFT total</p>
+                        <p className="statistics-text">NFT(s) with rewards <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path></svg></span></p>
+                        <p className="statistics-text">Your % of the Pool<span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path></svg></span> </p>
                 </div>
                 <div className="urc-right">
-                  <p className="statistics-text">0 <span className="grey">WATT</span></p>
-                  <p className="statistics-text">0 <span className="grey">WATT</span></p>
-                  <p className="statistics-text">0 <span className="grey">WATT</span></p>
-                  <p className="statistics-text">0 <span className="grey">WATT</span></p>
-                  <p className="statistics-text">0 <span className="grey">WATT</span></p>
-                  <p className="statistics-text">0 <span className="grey">WATT</span></p>
-                  <p className="statistics-text">0 <span className="grey">WATT</span></p>
+                <p className="ssc-text">0 <span className='grey'>WATT</span></p>
+                <p className="statistics-text">0 <span className='grey'>PLP</span></p>
+                        <p className="statistics-text">0 <span className='grey'>PLS</span></p>
+                        <p className="statistics-text">0 <span className='grey'>WPLS</span></p>
+                        <p className="statistics-text">0 <span className='grey'>PLSX</span></p>
+                        <p className="statistics-text">0 <span className='grey'>PXDC</span></p>
+                        <p className="statistics-text">0 <span className='grey'>HEXDC</span></p>
+                        <p className="statistics-text">0 <span className='grey'>HEX</span></p>
+                        <p className="statistics-text">0 <span className='grey'>USDL</span></p>
+                        <p className="statistics-text">0 <span className='grey'>LOAN</span></p>
+                        <p className="statistics-text">0 <span className='grey'>NFT(s)</span></p>
+                        <p className="statistics-text">0 <span className='grey'>NFT(s)</span></p>
+                        <p className="statistics-text">0 <span className='grey'>%</span></p>
                 </div>
               </div>
             </div>

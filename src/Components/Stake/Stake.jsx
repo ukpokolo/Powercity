@@ -212,7 +212,7 @@ function Stake() {
                         
                     </div>
                     <div className="sfc-right">
-                        <p className="ssc-text">0 <span className='grey'>WATT</span></p>
+                    <p className="ssc-text">0 <span className='grey'>WATT</span></p>
                         <p className="ssc-text">0 <span className='grey'>PLP</span></p>
                         <p className="ssc-text">0 <span className='grey'>PLS</span></p>
                         <p className="ssc-text">0 <span className='grey'>WPLS</span></p>

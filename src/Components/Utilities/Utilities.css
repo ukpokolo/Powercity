@@ -127,7 +127,12 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    
+    justify-content: center;
+    align-items:end;    
+}
+
+.mmt-right button{
+    position: relative;
 }
 
 .mmf-button{
@@ -193,7 +198,42 @@
     gap: 5px;
 }
 
-.utilities-bottom span{
+.urc-right svg{
+    width: 12px;
+}
+
+.urc-left svg{
+    width: 12px;
+    color: #60A5FA;
+}
+
+.utc-text{
+    position: relative;
+}
+.utc-text img{
+    width: 20px;
+    position: absolute;
+}
+
+.utc-text .space{
+    padding-left: 25px;
+}
+
+.mmt-right svg{
+    width: 15px;
+    margin-right: -15px;
+    color: #60A5FA;
+    position: absolute;
+    top: 5px;
+}
+
+.upr-button svg{
+    width: 15px;
+    margin-right: -15px;
+    color: #60A5FA;
+}
+
+.utilities-bottom-left span{
     padding-left: 25px;
 }
 
