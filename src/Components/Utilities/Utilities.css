@@ -193,6 +193,20 @@
     gap: 5px;
 }
 
+.utilities-bottom span{
+    padding-left: 25px;
+}
+
+.utilities-bottom .up-text{
+    position: relative;
+}
+
+.utilities-bottom  img{
+    width: 20px;
+    padding-right: 5px;
+    position: absolute;
+}
+
 .urc-head{
     opacity: .7;
     font-size: 17px;

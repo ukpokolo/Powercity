@@ -1,5 +1,18 @@
 import React from 'react'
 import './Utilities.css'
+import wpls from '../assets/wpls.svg'
+import pulse from '../assets/pulse.svg'
+import plp from '../assets/plp.svg'
+import swapwattx from '../assets/swapwattx.png'
+import wpls2 from '../assets/wpls 2.svg'
+import pulsex from '../assets/pulsex.svg'
+import pxdc from '../assets/pxdc.svg'
+import hexdc from '../assets/hexdc.svg'
+import hex from '../assets/hex.svg'
+import loan from '../assets/loan.svg'
+import usdl from '../assets/usdl.svg'
+import metamask from '../assets/metamask.svg'
+import watt from '../assets/watt.svg'
 
 function Utilities() {
   return (
@@ -15,8 +28,8 @@ function Utilities() {
                         <p className='utilities-text'>With POWERCITY Wrapper you can wrap your $PLS directly into the $WPLS Token. Or you can unwrap your $WPLS back into $PLS.</p>
                         <div className="utc-balance">
                           <div className="utc-left">
-                            <p className='utc-text'>WPLS balance:</p>
-                            <p className='utc-text'>PLS balance:</p>
+                            <p className='utc-text'><span><img src={wpls} alt="" /></span>WPLS balance:</p>
+                            <p className='utc-text'><span><img src={pulse} alt="" /></span>PLS balance:</p>
                           </div>
                           <div className="utc-right">
                             <p className='utc-text'>0<span className="grey">WPLS</span> </p>
@@ -30,8 +43,8 @@ function Utilities() {
                         <p className='utilities-text'>With POWERCITY Wrapper you can wrap your $PLS directly into the $WPLS Token. Or you can unwrap your $WPLS back into $PLS.</p>
                         <div className="utc-balance">
                           <div className="utc-left">
-                            <p className='utc-text'>WPLS balance:</p>
-                            <p className='utc-text'>PLS balance:</p>
+                            <p className='utc-text'><span><img src={plp} alt="" /></span>WPLS balance:</p>
+                            <p className='utc-text'><span><img src={watt} alt="" /></span>PLS balance:</p>
                           </div>
                           <div className="utc-right">
                             <p className='utc-text'>0<span className="grey">WPLS</span> </p>
@@ -47,8 +60,8 @@ function Utilities() {
                     <p className="utilities-text">Use the below buttons to buy $Watt on PortalX or add liquidity on PulseX</p>
                     <div className="utilities-pairs">
                       <div className="utilities-pairs-left">
-                        <p className="up-text">Add WATT-PLS Pair:</p>
-                        <p className="up-text">Buy WATT:</p>
+                        <p className="up-text"><span><img src={plp} alt="" /></span>Add WATT-PLS Pair:</p>
+                        <p className="up-text"><span><img src={swapwattx} alt="" /></span>Buy WATT:</p>
                       </div>
                       <div className="utilities-pairs-right">
                         <button className="upr-button">ADD ON PULSEX</button>
@@ -59,16 +72,16 @@ function Utilities() {
                     <p className="utilities-text">Use the below features to add the tokens assets used in the CORE to your MetaMask wallet. You will be able to see the balance by adding token assets to your wallet.</p>
                     <div className="metamask-table">
                       <div className="mmt-left">
-                        <p className="up-text">Add WATT asset to wallet</p>
-                        <p className="up-text">Add WATT asset to wallet</p>
-                        <p className="up-text">Add WATT asset to wallet</p>
-                        <p className="up-text">Add WATT asset to wallet</p>
-                        <p className="up-text">Add WATT asset to wallet</p>
-                        <p className="up-text">Add WATT asset to wallet</p>
-                        <p className="up-text">Add WATT asset to wallet</p>
-                        <p className="up-text">Add WATT asset to wallet</p>
-                        <p className="up-text">Add WATT asset to wallet</p>
-                        <p className="up-text">Add WATT asset to wallet</p>
+                        <p className="up-text"><img src={watt} alt="" /><span>Add WATT asset to wallet</span></p>
+                        <p className="up-text"><img src={plp} alt="" /><span>Add PLP asset to wallet</span></p>
+                        <p className="up-text"><img src={wpls} alt="" /><span>Add WPLS asset to wallet</span></p>
+                        <p className="up-text"><img src={pulsex} alt="" /><span>Add PLSX asset to wallet</span></p>
+                        <p className="up-text"><img src={pxdc} alt="" /><span>Add PXDC asset to wallet</span></p>
+                        <p className="up-text"><img src={hexdc} alt="" /><span>Add HEXDC asset to wallet</span></p>
+                        <p className="up-text"><img src={hex} alt="" /><span>Add HEX asset to wallet</span></p>
+                        <p className="up-text"><img src={loan} alt="" /><span>Add LOAN asset to wallet</span></p>
+                        <p className="up-text"><img src={usdl} alt="" /><span>Add USDL asset to wallet</span></p>
+                        <p className="up-text"><img src={metamask} alt="" /><span>Import your NFTs in MetaMask</span></p>
                       </div>
                       <div className="mmt-right">
                         <button className="mmf-button">ADD</button>
