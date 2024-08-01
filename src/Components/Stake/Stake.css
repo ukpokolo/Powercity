@@ -25,6 +25,7 @@
 .sort-btn{
     display: flex;
     justify-content: space-between;
+    
 }
 
 .sort-btn button{
@@ -34,6 +35,7 @@
     background-color: #F5F9FF;
     font-weight: 600;
     display: flex;
+    cursor: pointer;
     position: relative;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
 }
@@ -64,10 +66,59 @@
     left: 0;
     right: 0;
 }
-.loading-svg svg{
-    transform:rotate(360);
+.loading-svg svg:hover{
+    display: inline-block;
+    animation: rotate 1s linear infinite;
 }
 
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.sorting{
+    position: relative;
+}
+
+.sorting ul{
+    position: absolute;
+    width: 160px;
+    display: none;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+}
+
+.stake .sorting:hover ul,
+.stake .sorting.active ul {
+  display: block;
+}
+.sorting li{
+    list-style: none;
+    font-size: 15px;
+    display: flex;
+    padding:10px;
+    margin-left: -30px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sorting li:hover{
+    border-radius: 25px;    
+    background-color: #E8E9EA;
+}
+
+.sorting span svg{
+    width: 15px;
+    padding-right: 5px;
+    color: #60A5FA;
+}
 .stake-left{    
     background-color: #DBE9FF;
     padding: 20px;
@@ -155,6 +206,16 @@
     line-height: 1.5rem;
     border-color: rgba(0, 0, 0, 0.3);
 
+}
+
+.stake-search {
+    position: relative;
+}
+.stake-search img{
+  width: 45px;
+  position: absolute;
+  right: 3%;
+  top: 12px;
 }
 
 

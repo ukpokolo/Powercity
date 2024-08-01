@@ -1,10 +1,33 @@
 import React, {  useState } from 'react';
 import './Stake.css'
+import watt_logo from '../assets/watt.svg'
 
 
 function Stake() {
 
   const [activeTabCreateStake, setActiveTabCreateStake] = useState('watt'); // Default to 'watt' tab 
+  const [isSortingActive, setIsSortingActive] = useState(false);
+
+  const handleSortingClick = () => {
+    setIsSortingActive(!isSortingActive);
+  };
+
+  const priceData = [
+    {
+      wattPrice: '$0.00093009',
+      wattText: 'POWERCITY Token',
+      plsPrice: '$0.00093009',
+      plsText: 'PulseChain Native',
+    },
+    {
+      wattPrice: '$0.00093009',
+      wattText: 'POWERCITY Token',
+      plsPrice: '$0.00093009',
+      plsText: 'PulseChain Native',
+    },
+    // Add more items as needed
+  ];
+
   return (
     <div className='stake'>
         <div className="stake-con">
@@ -12,9 +35,19 @@ function Stake() {
                 <h1 className="stake-head">Stakes</h1>
                 <p className="stake-text">Manage your staked WATT and PLP NFTs. These receipt NFTs allow staked $WATT to be transferred or traded without having to unstake the tokens. Whichever wallet holds the NFT can claim staking rewards and unstake the $WATT tokens.</p>
                 <div className="sort-btn">
+                  <div className={`sorting ${isSortingActive ? 'active' : ''}`} onClick={handleSortingClick}>
                   <button>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75"></path></svg>
                   SORT</button>
+                  <ul>
+                    <li>NFT ID <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5L7.5 3m0 0L12 7.5M7.5 3v13.5m13.5 0L16.5 21m0 0L12 16.5m4.5 4.5V7.5"></path></svg></span></li>
+                    <li>WATT Balance <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5L7.5 3m0 0L12 7.5M7.5 3v13.5m13.5 0L16.5 21m0 0L12 16.5m4.5 4.5V7.5"></path></svg></span></li>
+                    <li>AMP Balance <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5L7.5 3m0 0L12 7.5M7.5 3v13.5m13.5 0L16.5 21m0 0L12 16.5m4.5 4.5V7.5"></path></svg></span></li>
+                    <li>PLP Balance <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5L7.5 3m0 0L12 7.5M7.5 3v13.5m13.5 0L16.5 21m0 0L12 16.5m4.5 4.5V7.5"></path></svg></span></li>
+                    <li>Has Rewards <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5L7.5 3m0 0L12 7.5M7.5 3v13.5m13.5 0L16.5 21m0 0L12 16.5m4.5 4.5V7.5"></path></svg></span></li>
+                  </ul>
+                  </div>
+                  
                   <div className='loading-svg'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6 mt-4 text-blue-400 tooltipicon refresh active:h-7 active:w-7"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"></path><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6 mt-4 text-blue-400 tooltipicon refresh active:h-7 active:w-7"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"></path></svg></svg></div>
                   
                   <button>
@@ -89,7 +122,10 @@ function Stake() {
             <p>{activeTabCreateStake === 'watt' ? 'WATT Amount' : 'PLP Amount'}</p>
             <p>$0</p>
           </div>
+          <div className="stake-search">
           <input type="text" />
+          <img src={watt_logo} alt="" />
+          </div>
           <div className="cst-search-bottom">
             <div className="cst-sb-left">
               <p>{activeTabCreateStake === 'watt' ? 'Your WATT Balance:' : 'Your PLP Balance:'}</p>
@@ -114,34 +150,23 @@ function Stake() {
             <div className="statistics-stake">
               <h1 className="stake-head">Statistics</h1>
               <p className="stake-text">Live CORE/PulseChain Statistics</p>
-              <div className="stake-first-card">
-                    <div className="sfc-left">
-                        <h1>WATT Price</h1>
-                        <p className="sfc-bold">$0.00093009</p>
-                        <p className="stake-text">POWERCITY Token</p>
-                    </div>
-                    <hr className='stake-hr' />
-                    <div className="sfc-right">
-                        <h1>PLS Price</h1>
-                        <p className="sfc-bold">$0.00093009</p>
-                        <p className="stake-text">PulseChain Native</p>
-                    </div>
-
-                </div>
-                <div className="stake-first-card">
-                    <div className="sfc-left">
-                        <h1>WATT Price</h1>
-                        <p className="sfc-bold">$0.00093009</p>
-                        <p className="stake-text">POWERCITY Token</p>
-                    </div>
-                    <hr className='stake-hr' />
-                    <div className="sfc-right">
-                        <h1>PLS Price</h1>
-                        <p className="sfc-bold">$0.00093009</p>
-                        <p className="stake-text">PulseChain Native</p>
-                    </div>
-
-                </div>
+              <div className="stake-container">
+      {priceData.map((data, index) => (
+        <div key={index} className="stake-first-card">
+          <div className="sfc-left">
+            <h1>WATT Price</h1>
+            <p className="sfc-bold">{data.wattPrice}</p>
+            <p className="stake-text">{data.wattText}</p>
+          </div>
+          <hr className='stake-hr' />
+          <div className="sfc-right">
+            <h1>PLS Price</h1>
+            <p className="sfc-bold">{data.plsPrice}</p>
+            <p className="stake-text">{data.plsText}</p>
+          </div>
+        </div>
+      ))}
+    </div>
                 <div className="stake-second-card">
                     <div className="sfc-left">
                         <p className="ssc-text">Gas Price</p>
