@@ -14,16 +14,20 @@ function Stake() {
 
   const priceData = [
     {
+      head1: 'WATT Price',
+      head2: 'PLS Price',
       wattPrice: '$0.00093009',
       wattText: 'POWERCITY Token',
-      plsPrice: '$0.00093009',
+      plsPrice: '$0.00004426',
       plsText: 'PulseChain Native',
     },
     {
-      wattPrice: '$0.00093009',
-      wattText: 'POWERCITY Token',
-      plsPrice: '$0.00093009',
-      plsText: 'PulseChain Native',
+      head1: 'PLSX Price',
+      head2: 'PLP Price',
+      wattPrice: '$0.00002502',
+      wattText: 'PulseX Token',
+      plsPrice: '$0.00040114',
+      plsText: 'WATT/PLS Pool Token',
     },
     // Add more items as needed
   ];
@@ -154,13 +158,13 @@ function Stake() {
       {priceData.map((data, index) => (
         <div key={index} className="stake-first-card">
           <div className="sfc-left">
-            <h1>WATT Price</h1>
+            <h1>{data.head1}</h1>
             <p className="sfc-bold">{data.wattPrice}</p>
             <p className="stake-text">{data.wattText}</p>
           </div>
           <hr className='stake-hr' />
           <div className="sfc-right">
-            <h1>PLS Price</h1>
+            <h1>{data.head2}</h1>
             <p className="sfc-bold">{data.plsPrice}</p>
             <p className="stake-text">{data.plsText}</p>
           </div>
@@ -171,22 +175,20 @@ function Stake() {
                     <div className="sfc-left">
                         <p className="ssc-text">Gas Price</p>
                         <p className="ssc-text">Market Cap</p>
-                        <p className="ssc-text">Market Cap</p>
-                        <p className="ssc-text">Market Cap</p>
-                        <p className="ssc-text">Market Cap</p>
-                        <p className="ssc-text">Market Cap</p>
-                        <p className="ssc-text">Market Cap</p>
-                        <p className="ssc-text">Market Cap</p>
+                        <p className="ssc-text">Total WATT Locked <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path></svg></span></p>
+                        <p className="ssc-text">Total PLP Locked <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path></svg></span></p>
+                        <p className="ssc-text">Total WATT Circulating <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path></svg></span></p>
+                        <p className="ssc-text">Total AMP Supply <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path></svg></span></p>
+                        <p className="ssc-text">Reward Pool <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path></svg></span></p>
                     </div>
                     <div className="sfc-right">
-                        <p className="ssc-text">232,977</p>
-                        <p className="ssc-text">Market Cap</p>
-                        <p className="ssc-text">Market Cap</p>
-                        <p className="ssc-text">Market Cap</p>
-                        <p className="ssc-text">Market Cap</p>
-                        <p className="ssc-text">Market Cap</p>
-                        <p className="ssc-text">Market Cap</p>
-                        <p className="ssc-text">Market Cap</p>
+                        <p className="ssc-text"><span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"></path></svg></span>428,977</p>
+                        <p className="ssc-text">$2,082,993</p>
+                        <p className="ssc-text">2,234,070,745</p>
+                        <p className="ssc-text">344,332,418</p>
+                        <p className="ssc-text">208,455,625</p>
+                        <p className="ssc-text">75,403</p>
+                        <p className="ssc-text">$188,634</p>
                     </div>
 
                 </div>
@@ -194,24 +196,35 @@ function Stake() {
                 <p className='stake-text'>The CORE assets currently in your wallet</p>
                 <div className="stake-second-card">
                     <div className="sfc-left">
-                        <p className="ssc-text">Gas Price</p>
-                        <p className="ssc-text">Market Cap</p>
-                        <p className="ssc-text">Market Cap</p>
-                        <p className="ssc-text">Market Cap</p>
-                        <p className="ssc-text">Market Cap</p>
-                        <p className="ssc-text">Market Cap</p>
-                        <p className="ssc-text">Market Cap</p>
-                        <p className="ssc-text">Market Cap</p>
+                        <p className="ssc-text">WATT Balance</p>
+                        <p className="ssc-text">PLP Balance</p>
+                        <p className="ssc-text">PLS Balance</p>
+                        <p className="ssc-text">WPLS Balance</p>
+                        <p className="ssc-text">PLSX Balance</p>
+                        <p className="ssc-text">PXDC Balance</p>
+                        <p className="ssc-text">HEXDC Balance</p>
+                        <p className="ssc-text">HEX Balance</p>
+                        <p className="ssc-text">USDL Balance</p>
+                        <p className="ssc-text">LOAN Balance</p>
+                        <p className="ssc-text">NFT total</p>
+                        <p className="ssc-text">NFT(s) with rewards</p>
+                        <p className="ssc-text">Your % of the Pool </p>
+                        
                     </div>
                     <div className="sfc-right">
-                        <p className="ssc-text">232,977</p>
-                        <p className="ssc-text">Market Cap</p>
-                        <p className="ssc-text">Market Cap</p>
-                        <p className="ssc-text">Market Cap</p>
-                        <p className="ssc-text">Market Cap</p>
-                        <p className="ssc-text">Market Cap</p>
-                        <p className="ssc-text">Market Cap</p>
-                        <p className="ssc-text">Market Cap</p>
+                        <p className="ssc-text">0 <span className='grey'>WATT</span></p>
+                        <p className="ssc-text">0 <span className='grey'>PLP</span></p>
+                        <p className="ssc-text">0 <span className='grey'>PLS</span></p>
+                        <p className="ssc-text">0 <span className='grey'>WPLS</span></p>
+                        <p className="ssc-text">0 <span className='grey'>PLSX</span></p>
+                        <p className="ssc-text">0 <span className='grey'>PXDC</span></p>
+                        <p className="ssc-text">0 <span className='grey'>HEXDC</span></p>
+                        <p className="ssc-text">0 <span className='grey'>HEX</span></p>
+                        <p className="ssc-text">0 <span className='grey'>USDL</span></p>
+                        <p className="ssc-text">0 <span className='grey'>LOAN</span></p>
+                        <p className="ssc-text">0 <span className='grey'>NFT(s)</span></p>
+                        <p className="ssc-text">0 <span className='grey'>NFT(s)</span></p>
+                        <p className="ssc-text">0 <span className='grey'>%</span></p>
                     </div>
 
                 </div>

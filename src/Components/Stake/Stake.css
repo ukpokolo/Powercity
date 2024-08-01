@@ -285,7 +285,12 @@
     padding-top: 18px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 8px;
+}
+
+.sfc-left svg{
+    width: 12px;
+    color: #60A5FA;
 }
 
 .sfc-right{
@@ -294,7 +299,12 @@
     padding-top: 18px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 8px;
+}
+
+.sfc-right svg{
+    width: 13px;
+    padding-right: 6px;
 }
 
 .stake-hr{
