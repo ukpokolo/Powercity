@@ -3,7 +3,7 @@
 }
 
 .collector-con{
-    padding: 105px 30px;
+    padding: 105px 0px;
     margin: 0 auto;
     display: flex;
     gap: 20px;
@@ -25,12 +25,12 @@
 
 .collector-head{
     font-size: 1.4em;
-    font-weight: 450;
+    font-weight: 350;
     padding-bottom: 17px;
 }
 
 .collector-text{
-    font-size: 15px;
+    font-size: 14px;
     opacity: .7;
     padding-bottom: 17px;
 }
@@ -61,10 +61,23 @@
     padding: 30px;
     margin-top: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+    overflow-x: scroll;
+}
+
+.earn-protocol-top{
+    display: flex;
+    justify-content: space-between;
+}
+.earn-protocol-top img{
+    height: auto;
+    max-width: 100px;
 }
 
 .earn-protocol table{
     width: 100%;
+    border-collapse: collapse;
+    font-size: 14PX;
 }
 
 .earn-protocol thead th{
@@ -110,6 +123,7 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+    padding-right: 25px;
 }
 
 .cfc-right{
@@ -156,7 +170,7 @@
 
 .cfc-bold{
     font-weight: 700;
-    font-size: 25px;
+    font-size: 1.6em;
 }
 
 .collector-second-card{
@@ -169,7 +183,7 @@
 }
 
 .csc-text{
-    font-size: 15px;
+    font-size: 14px;
 }
 
 @media (min-width:1024px) {

@@ -211,6 +211,7 @@
 .statistics-table{
     width: 100%;
     border-collapse: collapse;
+    margin-top: 20px;
 }
 .statistics-table td{
     padding: 5px;
@@ -220,10 +221,13 @@
 .statistics-table svg{
     width: 13px;
     color: #60A5FA;
+    padding-left: 5px;
 }
 
-.statistics-table :nth-child(2) svg{
+.statistics-table tr :nth-child(2) svg{
     color: #000 !important;
+    padding-right: 5px;
+    padding-left: 0 !important;
 }
 
 .utc-text{
@@ -287,7 +291,7 @@
 }
 
 .statistics-text{
-    font-size: 15px;
+    font-size: 14px;
 }
 
 

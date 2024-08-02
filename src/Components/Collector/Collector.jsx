@@ -1,5 +1,9 @@
 import React from 'react'
 import './Collector.css'
+import earn_logo from '../assets/earn-logo-dark.png'
+import flex_logo from '../assets/flex-logo-dark.png'
+import portalx_logo from '../assets/earn-logo-dark.png'
+import amplifier_logo from '../assets/amp-ll-logo-dark.png'
 
 function Collector() {
   return (
@@ -19,6 +23,7 @@ function Collector() {
                 <div className="earn-protocol">
                     <div className="earn-protocol-top">
                         <h1>EARN Protocol</h1>
+                        <img src={earn_logo} alt="" />
                     </div>
                     
                     <table>
@@ -46,7 +51,10 @@ function Collector() {
                     </table>
                 </div>
                 <div className="earn-protocol">
-                    <h1>FLEX Protocol</h1>
+                <div className="earn-protocol-top">
+                        <h1>EARN Protocol</h1>
+                        <img src={earn_logo} alt="" />
+                    </div>
                     <table>
                         <thead>
                             <tr>
@@ -72,7 +80,10 @@ function Collector() {
                     </table>
                 </div>
                 <div className="earn-protocol">
-                    <h1>Portal Bridge</h1>
+                <div className="earn-protocol-top">
+                        <h1>EARN Protocol</h1>
+                        <img src={earn_logo} alt="" />
+                    </div>
                     <table>
                         <thead>
                             <tr>
