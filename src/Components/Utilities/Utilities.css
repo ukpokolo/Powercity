@@ -168,6 +168,7 @@
     display: flex;
     padding: 0   20px;
     border-radius: 20px;
+    overflow-x: scroll;
 }
 
 .utilities-card-con{
@@ -205,6 +206,24 @@
 .urc-left svg{
     width: 12px;
     color: #60A5FA;
+}
+
+.statistics-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.statistics-table td{
+    padding: 5px;
+    width: 50%;
+}
+
+.statistics-table svg{
+    width: 13px;
+    color: #60A5FA;
+}
+
+.statistics-table :nth-child(2) svg{
+    color: #000 !important;
 }
 
 .utc-text{

@@ -10,6 +10,9 @@
     flex-direction: column;
 }
 
+.stake-first-card{
+    overflow-x: scroll;
+}
 .stake-head{
     font-size: 1.4em;
     font-weight: 450;

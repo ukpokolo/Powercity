@@ -130,61 +130,143 @@ function Collector() {
 
                 </div>
                 <div className="collector-second-card">
-                    <div className="cfc-left">
-                    <p className="csc-text">Gas Price</p>
-                        <p className="csc-text">Market Cap</p>
-                        <p className="csc-text">Total WATT Locked <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path></svg></span></p>
-                        <p className="csc-text">Total PLP Locked <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path></svg></span></p>
-                        <p className="csc-text">Total WATT Circulating <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path></svg></span></p>
-                        <p className="csc-text">Total AMP Supply <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path></svg></span></p>
-                        <p className="csc-text">Reward Pool <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path></svg></span></p>
-                    </div>
-                    <div className="cfc-right">
-                    <p className="csc-text"><span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"></path></svg></span>428,977</p>
-                        <p className="csc-text">$2,082,993</p>
-                        <p className="csc-text">2,234,070,745</p>
-                        <p className="csc-text">344,332,418</p>
-                        <p className="csc-text">208,455,625</p>
-                        <p className="csc-text">75,403</p>
-                        <p className="csc-text">$188,634</p>
-                    </div>
+  <table className='statistics-table'>
+    <tbody>
+      <tr>
+        <td className="csc-text">Gas Price</td>
+        <td className="csc-text">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 tooltipicon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"></path>
+            </svg>
+          </span>
+          428,977
+        </td>
+      </tr>
+      <tr>
+        <td className="csc-text">Market Cap</td>
+        <td className="csc-text">$2,082,993</td>
+      </tr>
+      <tr>
+        <td className="csc-text">
+          Total WATT Locked 
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path>
+            </svg>
+          </span>
+        </td>
+        <td className="csc-text">2,234,070,745</td>
+      </tr>
+      <tr>
+        <td className="csc-text">
+          Total PLP Locked 
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path>
+            </svg>
+          </span>
+        </td>
+        <td className="csc-text">344,332,418</td>
+      </tr>
+      <tr>
+        <td className="csc-text">
+          Total WATT Circulating 
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path>
+            </svg>
+          </span>
+        </td>
+        <td className="csc-text">208,455,625</td>
+      </tr>
+      <tr>
+        <td className="csc-text">
+          Total AMP Supply 
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path>
+            </svg>
+          </span>
+        </td>
+        <td className="csc-text">75,403</td>
+      </tr>
+      <tr>
+        <td className="csc-text">
+          Reward Pool 
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path>
+            </svg>
+          </span>
+        </td>
+        <td className="csc-text">$188,634</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-                </div>
                 <h1 className='collector-head'>Your Wallet</h1>
                 <p className='collector-text'>The CORE assets currently in your wallet</p>
                 <div className="collector-second-card">
-                    <div className="cfc-left">
-                    <p className="statistics-text">WATT Balance</p>
-                        <p className="statistics-text">PLP Balance <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path></svg></span></p>
-                        <p className="statistics-text">PLS Balance</p>
-                        <p className="statistics-text">WPLS Balance</p>
-                        <p className="statistics-text">PLSX Balance</p>
-                        <p className="statistics-text">PXDC Balance</p>
-                        <p className="statistics-text">HEXDC Balance</p>
-                        <p className="statistics-text">HEX Balance</p>
-                        <p className="statistics-text">USDL Balance</p>
-                        <p className="statistics-text">LOAN Balance</p>
-                        <p className="statistics-text">NFT total</p>
-                        <p className="statistics-text">NFT(s) with rewards <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path></svg></span></p>
-                        <p className="statistics-text">Your % of the Pool<span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path></svg></span> </p>
-                    </div>
-                    <div className="cfc-right">
-                    <p className="statistics-text">0 <span className='grey'>WATT</span></p>
-                    <p className="statistics-text">0 <span className='grey'>PLP</span></p>
-                        <p className="statistics-text">0 <span className='grey'>PLS</span></p>
-                        <p className="statistics-text">0 <span className='grey'>WPLS</span></p>
-                        <p className="statistics-text">0 <span className='grey'>PLSX</span></p>
-                        <p className="statistics-text">0 <span className='grey'>PXDC</span></p>
-                        <p className="statistics-text">0 <span className='grey'>HEXDC</span></p>
-                        <p className="statistics-text">0 <span className='grey'>HEX</span></p>
-                        <p className="statistics-text">0 <span className='grey'>USDL</span></p>
-                        <p className="statistics-text">0 <span className='grey'>LOAN</span></p>
-                        <p className="statistics-text">0 <span className='grey'>NFT(s)</span></p>
-                        <p className="statistics-text">0 <span className='grey'>NFT(s)</span></p>
-                        <p className="statistics-text">0 <span className='grey'>%</span></p>
-                    </div>
+  <table className='statistics-table'>
+    <tbody>
+      <tr>
+        <td className="statistics-text">WATT Balance</td>
+        <td className="statistics-text">0 <span className="grey">WATT</span></td>
+      </tr>
+      <tr>
+        <td className="statistics-text">PLP Balance <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" className="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path></svg></span></td>
+        <td className="statistics-text">0 <span className="grey">PLP</span></td>
+      </tr>
+      <tr>
+        <td className="statistics-text">PLS Balance</td>
+        <td className="statistics-text">0 <span className="grey">PLS</span></td>
+      </tr>
+      <tr>
+        <td className="statistics-text">WPLS Balance</td>
+        <td className="statistics-text">0 <span className="grey">WPLS</span></td>
+      </tr>
+      <tr>
+        <td className="statistics-text">PLSX Balance</td>
+        <td className="statistics-text">0 <span className="grey">PLSX</span></td>
+      </tr>
+      <tr>
+        <td className="statistics-text">PXDC Balance</td>
+        <td className="statistics-text">0 <span className="grey">PXDC</span></td>
+      </tr>
+      <tr>
+        <td className="statistics-text">HEXDC Balance</td>
+        <td className="statistics-text">0 <span className="grey">HEXDC</span></td>
+      </tr>
+      <tr>
+        <td className="statistics-text">HEX Balance</td>
+        <td className="statistics-text">0 <span className="grey">HEX</span></td>
+      </tr>
+      <tr>
+        <td className="statistics-text">USDL Balance</td>
+        <td className="statistics-text">0 <span className="grey">USDL</span></td>
+      </tr>
+      <tr>
+        <td className="statistics-text">LOAN Balance</td>
+        <td className="statistics-text">0 <span className="grey">LOAN</span></td>
+      </tr>
+      <tr>
+        <td className="statistics-text">NFT total</td>
+        <td className="statistics-text">0 <span className="grey">NFT(s)</span></td>
+      </tr>
+      <tr>
+        <td className="statistics-text">NFT(s) with rewards <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" className="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path></svg></span></td>
+        <td className="statistics-text">0 <span className="grey">NFT(s)</span></td>
+      </tr>
+      <tr>
+        <td className="statistics-text">Your % of the Pool <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" className="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path></svg></span></td>
+        <td className="statistics-text">0 <span className="grey">%</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-                </div>
             </div>
             
         </div>
