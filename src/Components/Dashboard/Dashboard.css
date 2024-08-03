@@ -32,8 +32,8 @@
 }
 
 .welcome p{
-    font-size: 15px;
-    opacity: .7;
+    font-size: 14px;
+    color: #20253799;
     padding-top: 10px;
 }
 
@@ -57,9 +57,9 @@
 }
 
 .prices-box h2{
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 400;
-    opacity: .7;
+    color: #20253799;
 }
 
 .prices-box .pb-bold{
@@ -68,8 +68,10 @@
     line-height: 2.5rem;
 }
 .prices-box .pb-text{
-    
-    font-size: 15px;
+    width: 220px;
+    margin: 0 auto;
+    font-size: 14px;    
+    color: #20253799;
 }
 
 .instant-stake{
@@ -85,7 +87,7 @@
 }
 .dashboard-text{
     text-align: center;
-    font-size: 15px;
+    font-size: 14px;
     opacity: .7;
     padding-top: 10px;
 }
@@ -149,8 +151,12 @@
     padding-top: 10px;
 }
 
-.instant-stake button{
+.instant-stake button:hover{
     background-color: #70A5FA;
+}
+.instant-stake button{
+    background-color: #93bbfb;
+    color: #000;
     border-radius: 25px;
     border: none;
     padding: 17px 12px;

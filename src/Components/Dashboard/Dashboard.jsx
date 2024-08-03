@@ -3,6 +3,7 @@ import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'rec
 import { curveCardinal } from 'd3-shape';
 import './Dashboard.css';
 import watt_logo from '../assets/watt.svg'
+import plp_logo from '../assets/plp.svg'
 
 function Dashboard() {
   const generateData = (interval) => {
@@ -149,7 +150,19 @@ function Dashboard() {
       tooltipFormatter: (value) => [`$${value.toLocaleString()}`, 'Locked WATT'],
       stacked: true
     }
+
+
+
   ];
+
+  const priceData = [
+    { title: 'WATT Price', price: '$0.00064307', description: 'The Price of one WATT token.' },
+    { title: 'Market Cap', price: '$1,571,590', description: 'Number of WATT multplied by the market price.' },
+    { title: 'Reward Pool', price: '$181,236.89', description: 'Total rewards that have been distributed.' },
+    { title: 'Total WATT Locked in Staking', price: '$2,205,466,608', description: 'TVL $1,418,272.67' },
+    { title: 'Total PLP Locked in Staking', price: '$355,037,889', description: 'TVL $119,482.56' },
+    { title: 'Rewards Tokens', price: '7 Tokens', description: 'Tokens whitelisted for rewards: PXDC / WPLS / PLSX / LOAN USDL / HEXDC / HEX' },
+   ];
 
   return (
     <div className='dashboard'>
@@ -165,14 +178,15 @@ function Dashboard() {
           Here you can add them to your wallet or view them in the block explorer.
         </p>
         <div className="prices-con">
-          {[...Array(6)].map((_, i) => (
-            <div className="prices-box" key={i}>
-              <h2>WATT Price</h2>
-              <h1 className="pb-bold">$0.00097090</h1>
-              <p className="pb-text">The Price of one WATT token</p>
+          {priceData.map((item, index) => (
+            <div className="prices-box" key={index}>
+              <h2>{item.title}</h2>
+              <h1 className="pb-bold">{item.price}</h1>
+              <p className="pb-text">{item.description}</p>
             </div>
           ))}
-        </div>
+</div>
+
       </div>
 
       <div className="instant-stake">
@@ -204,7 +218,7 @@ function Dashboard() {
           </div>
           <div className="dashboard-search">
           <input type="text" />
-          <img src={watt_logo} alt="" />
+          <img src={activeTabInstantStake === 'watt' ? watt_logo : plp_logo} alt="" />
           </div>
           
           <div className="ist-search-bottom">
