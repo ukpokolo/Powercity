@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 import nav_gif from '../assets/pc-logo.gif';
 import nav_logo from '../assets/core.png';
+import { ThemeContext } from '../../App';
 
 function Navbar() {
   const [isNavVisible, setIsNavVisible] = useState(false);
+  const { theme, toggleTheme } = useContext(ThemeContext);
+
 
   const toggleNav = () => {
     setIsNavVisible(!isNavVisible);
@@ -89,6 +92,11 @@ function Navbar() {
       <div className="nav-right">
         <button>Connect Wallet</button>
       </div>
+      
+      <label class="switch">
+              <input type="checkbox"  onChange={toggleTheme} checked={theme === "dark"} />
+              <span class="slider round"></span>
+      </label>
     </div>
   );
 }

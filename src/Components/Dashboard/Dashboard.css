@@ -1,6 +1,10 @@
 .dashboard{
   background-color: #F5F9FF;
 }
+
+#dark .dashboard{
+    background-color: #2A3655;
+}
 .dashboard-con{
     padding: 105px 0;
     margin: 0 auto;
@@ -26,6 +30,9 @@
     margin: 0 auto;
 }
 
+#dark .welcome{
+  background-color: #202537;
+}
 .dashboard-header{
     font-size: 22px;
     font-weight: 400;
@@ -52,6 +59,10 @@
     flex: 1 1 30%;
 }
 
+#dark .prices-box{
+  background-color: #395284 ;
+}
+
 .prices-box p{
     padding: 0;
 }
@@ -62,6 +73,22 @@
     color: #20253799;
 }
 
+#dark .prices-box h2{
+  color: #fafcff99;
+}
+#dark .pb-bold{
+  color: white;
+}
+#dark .pb-text{
+  color: #fafcff99;
+}
+
+#dark .dashboard-header{
+  color: #fff;
+}
+#dark .welcome p{
+  color: #fafcff99;
+}
 .prices-box .pb-bold{
     font-weight: bolder;
     font-size: 2.25rem;
@@ -80,6 +107,14 @@
     padding: 20px;    
     max-width: 630px;
     margin: 20px auto;
+}
+
+#dark .instant-stake{
+  background-color: #202537;
+}
+
+#dark .dashboard-text{
+  color: #fafcff99;
 }
 
 .instant-stake h1{ 
@@ -111,6 +146,10 @@
     border-radius: 25px;
 }
 
+#dark .ist-bottom{
+  background-color: #395284;
+  color: #fff;
+}
 .ist-search-head{
     display: flex;
     justify-content: space-between;
@@ -128,6 +167,12 @@
     border-color: rgba(0, 0, 0, 0.3);
 }
 
+#dark .ist-bottom input{
+  border-color: rgba(252, 248, 248, 0.3);
+  background-color: #395284;
+  color: #fff;
+}
+
 .instant-stake-tab li{
   padding: 8px 8px 19px 8px;
   border-radius: 10px;
@@ -135,6 +180,7 @@
   margin-bottom: -10px;
   cursor: pointer;
   opacity: .7;
+  font-size: 14px;
 }
 .instant-stake-tab li:hover{
     opacity: 1;
@@ -145,12 +191,28 @@
   
 }
 
+#dark .instant-stake-tab li.active{
+  background-color: #395284;
+  color: #fff;
+  opacity: 1;
+}
+#dark .instant-stake-tab li{
+  color: #fff;
+  opacity: 1;
+}
 .ist-search-bottom{
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
 }
 
+#dark .instant-stake button:hover{
+  background-color: #131620;
+}
+#dark .instant-stake button{
+  background-color:  #202537;
+  color: #fff;
+}
 .instant-stake button:hover{
     background-color: #70A5FA;
 }
@@ -178,6 +240,11 @@
     padding: 20px;
     max-width: 630px;
     margin: 10px auto;
+}
+
+
+#dark .reward-pool{
+  background-color: #202537;
 }
 
 .reward-pool .dashboard-header{

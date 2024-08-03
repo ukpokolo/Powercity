@@ -1,3 +1,75 @@
+.switch {
+    position: fixed;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    right: 20px;
+    bottom: 20px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 25px;
+    width: 53px;
+    background-color: #ffff;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 3px;
+    background-color: #93BBFB;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #395284;
+  }
+  input:checked + .slider:before {
+    background-color: #202537;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #395284;
+  }
+
+
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
 .navbar {
     display: flex;
     height: 45px;
@@ -11,6 +83,10 @@
     z-index: 1000; /* Ensure it's on top of everything else */
     background-color: #fff; /* Background color to cover content underneath */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+}
+
+#dark .navbar{
+    background-color: #395284;
 }
 
 .nav-left {
@@ -70,6 +146,12 @@
   z-index: -1;
   color: #000; 
 }
+
+
+#dark .nav-link.active svg {
+    background-color: #DBE9FF;
+    color: #000; 
+  } 
 .nav-link.active  {
   background-color: #DBE9FF;
   color: #000; 
@@ -93,6 +175,14 @@
     border-radius: 25px;
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#dark .nav-link:hover{
+    background-color: #0F2135;
+}
+
+#dark .nav-link svg:hover{
+    background-color: #0F2135;
 }
 
 .nav-right {
@@ -129,6 +219,10 @@
     margin-top: 4px;
 }
 
+#dark .nav-burger div{
+    border-color: #fff;
+}
+
 
 .nav-link{
     
@@ -136,6 +230,26 @@
     color: #000;
 }
 
+#dark .nav-link{
+    color: #fff;
+}
+
+#dark .nav-link.active svg{
+    background-color: #0F2135;
+    color: #fff;
+}
+#dark .nav-link.active{
+    background-color: #0F2135;
+}
+
+#dark .nav-right button{
+    background-color: #202537;
+    color: #fff;
+}
+#dark .nav-right button:hover{
+    background-color: #131620;
+    color: #fff;
+}
 @media (max-width: 1309px) {
     .navbar-logo {
         display: none;
@@ -145,6 +259,11 @@
 @media (max-width: 1024px) {
     .nav-burger {
         display: flex;
+    }
+
+    #dark .nav-list{
+        background-color: #395284;
+        
     }
 
     .nav-list {
@@ -158,6 +277,7 @@
         align-items: flex-start;
         border-radius: 12px;
         padding-top: 10px;
+        padding-bottom: 15px;
         display: none; /* Hide by default on smaller screens */
         z-index: 1000; /* Ensure it's on top of everything else */
     }
