@@ -294,9 +294,27 @@
     border-radius: 5px;
     text-align: center;
   }
+  #dark .pool-tab li {
+    color: #A9ACB5 ;
+  }
+
+  
+  #dark .pool-tab li:hover {
+    color: #ffff ;
+  }
+
+
   
   .pool-tab li.active {
     background-color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    color: #fff !important;
+  }
+
+
+  #dark .pool-tab li.active {
+    background-color: #395284;
     font-weight: bold;
     border-radius: 10px;
   }

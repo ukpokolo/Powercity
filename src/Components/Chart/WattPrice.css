@@ -1,0 +1,52 @@
+/* components/WattPrice.css */
+.custom-tooltip {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: fit-content !important; /* Adjust the width as needed */
+    height: 20px;
+    font-size: 12px;
+    color: #9BBAF6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+  }
+
+  #dark .reward-pool {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+  }
+  
+  #dark .recharts-surface {
+    fill: #2e2e2e;
+  }
+
+  #dark .pool-chart {
+    background-color: #395284;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  #dark .recharts-cartesian-axis-tick-value {
+    fill: #f0f0f0;
+  }
+  
+  /* Chart styling adjustments */
+
+  
+  
+.custom-tooltip2 {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: fit-content; /* Adjust the width as needed */
+    height: fit-content;
+    font-size: 12px;
+    text-align: center;
+    color: #9BBAF6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  }
+  
+.custom-tooltip2 > *{
+    padding-top: 10px;
+}
