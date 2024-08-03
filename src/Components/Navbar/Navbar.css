@@ -102,7 +102,7 @@
 }
 
 .nav-right button {
-    background-color: #70A5FA;
+    background-color: #93bbfb;
     border-radius: 25px;
     border: none;
     padding: 8px 12px;
@@ -111,6 +111,9 @@
     font-weight: bolder;
 }
 
+.nav-right button:hover{
+    background-color: #70A5FA;
+}
 .nav-burger {
     flex-direction: column;
     justify-content: center;

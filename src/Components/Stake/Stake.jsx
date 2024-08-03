@@ -1,6 +1,7 @@
 import React, {  useState } from 'react';
 import './Stake.css'
 import watt_logo from '../assets/watt.svg'
+import plp_logo from '../assets/plp.svg'
 
 
 function Stake() {
@@ -102,9 +103,7 @@ function Stake() {
             <div className="create-stake">
       <h1 className='stake-head'>Create Stake</h1>
       <p className='stake-text'>
-        Looking to stake your tokens immediately? Stake your PLP or WATT
-        tokens into an awesome NFT right here. You can also visit the stakes
-        or <span className='underline'>utilities</span> pages for comprehensive management.
+      Stake your PLP or WATT tokens into an awesome NFT right here
       </p>
       <div className="create-stake-tab">
         <ul>
@@ -122,14 +121,15 @@ function Stake() {
           </li>
         </ul>
         <div className="cst-bottom">
-          <div className="cst-search-head">
-            <p>{activeTabCreateStake === 'watt' ? 'WATT Amount' : 'PLP Amount'}</p>
-            <p>$0</p>
-          </div>
-          <div className="stake-search">
-          <input type="text" />
-          <img src={watt_logo} alt="" />
-          </div>
+        <div className="cst-search-head">
+  <p>{activeTabCreateStake === 'watt' ? 'WATT Amount' : 'PLP Amount'}</p>
+  <p>$0</p>
+</div>
+<div className="stake-search">
+  <input type="text" />
+  <img src={activeTabCreateStake === 'watt' ? watt_logo : plp_logo} alt="" />
+</div>
+
           <div className="cst-search-bottom">
             <div className="cst-sb-left">
               <p>{activeTabCreateStake === 'watt' ? 'Your WATT Balance:' : 'Your PLP Balance:'}</p>
