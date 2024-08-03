@@ -65,6 +65,11 @@
     overflow-x: scroll;
 }
 
+.earn-protocol::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+
+
 .earn-protocol-top{
     display: flex;
     justify-content: space-between;
@@ -76,8 +81,8 @@
 
 .earn-protocol table{
     width: 100%;
-    border-collapse: collapse;
     font-size: 14PX;
+    text-indent: 0;
 }
 
 .earn-protocol thead th{
@@ -87,9 +92,17 @@
     font-weight: 500;
 }
 
+
+.earn-protocol thead th {
+    
+    text-wrap: nowrap;
+    
+}
 .earn-protocol th,
 .earn-protocol td {
     padding: 12px 15px;
+
+    
 }
 
 .earn-protocol tbody td{
@@ -146,6 +159,10 @@
     font-weight: 400;
 }
 
+
+.collector-first-card::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
 .cfc-left svg{
  width: 15px;
  color: #60A5FA;
@@ -204,3 +221,5 @@
         width: 350px;
     }
 }
+
+

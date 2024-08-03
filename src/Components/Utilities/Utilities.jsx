@@ -71,31 +71,142 @@ function Utilities() {
                     <h1>MetaMask Features</h1>
                     <p className="utilities-text">Use the below features to add the tokens assets used in the CORE to your MetaMask wallet. You will be able to see the balance by adding token assets to your wallet.</p>
                     <div className="metamask-table">
-                      <div className="mmt-left">
-                        <p className="up-text"><img src={watt} alt="" /><span>Add WATT asset to wallet</span></p>
-                        <p className="up-text"><img src={plp} alt="" /><span>Add PLP asset to wallet</span></p>
-                        <p className="up-text"><img src={wpls} alt="" /><span>Add WPLS asset to wallet</span></p>
-                        <p className="up-text"><img src={pulsex} alt="" /><span>Add PLSX asset to wallet</span></p>
-                        <p className="up-text"><img src={pxdc} alt="" /><span>Add PXDC asset to wallet</span></p>
-                        <p className="up-text"><img src={hexdc} alt="" /><span>Add HEXDC asset to wallet</span></p>
-                        <p className="up-text"><img src={hex} alt="" /><span>Add HEX asset to wallet</span></p>
-                        <p className="up-text"><img src={loan} alt="" /><span>Add LOAN asset to wallet</span></p>
-                        <p className="up-text"><img src={usdl} alt="" /><span>Add USDL asset to wallet</span></p>
-                        <p className="up-text"><img src={metamask} alt="" /><span>Import your NFTs in MetaMask</span></p>
-                      </div>
-                      <div className="mmt-right">
-                        <button className="mmf-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>ADD</span></button>
-                        <button className="mmf-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>ADD</span></button>
-                        <button className="mmf-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>ADD</span></button>
-                        <button className="mmf-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>ADD</span></button>
-                        <button className="mmf-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>ADD</span></button>
-                        <button className="mmf-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>ADD</span></button>
-                        <button className="mmf-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>ADD</span></button>
-                        <button className="mmf-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>ADD</span></button>
-                        <button className="mmf-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>ADD</span></button>
-                        <button className="mmf-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75"></path></svg><span>COPY CONTRACT</span></button>
-                      </div>
-                    </div>
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <p className="up-text"><img src={watt} alt="" /><span>Add WATT asset to wallet</span></p>
+        </td>
+        <td>
+          <button className="mmf-button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span>ADD</span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p className="up-text"><img src={plp} alt="" /><span>Add PLP asset to wallet</span></p>
+        </td>
+        <td>
+          <button className="mmf-button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span>ADD</span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p className="up-text"><img src={wpls} alt="" /><span>Add WPLS asset to wallet</span></p>
+        </td>
+        <td>
+          <button className="mmf-button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span>ADD</span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p className="up-text"><img src={pulsex} alt="" /><span>Add PLSX asset to wallet</span></p>
+        </td>
+        <td>
+          <button className="mmf-button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span>ADD</span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p className="up-text"><img src={pxdc} alt="" /><span>Add PXDC asset to wallet</span></p>
+        </td>
+        <td>
+          <button className="mmf-button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span>ADD</span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p className="up-text"><img src={hexdc} alt="" /><span>Add HEXDC asset to wallet</span></p>
+        </td>
+        <td>
+          <button className="mmf-button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span>ADD</span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p className="up-text"><img src={hex} alt="" /><span>Add HEX asset to wallet</span></p>
+        </td>
+        <td>
+          <button className="mmf-button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span>ADD</span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p className="up-text"><img src={loan} alt="" /><span>Add LOAN asset to wallet</span></p>
+        </td>
+        <td>
+          <button className="mmf-button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span>ADD</span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p className="up-text"><img src={usdl} alt="" /><span>Add USDL asset to wallet</span></p>
+        </td>
+        <td>
+          <button className="mmf-button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span>ADD</span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p className="up-text"><img src={metamask} alt="" /><span>Import your NFTs in MetaMask</span></p>
+        </td>
+        <td>
+          <button className="mmf-button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-400 tooltipicon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75"></path>
+            </svg>
+            <span>COPY CONTRACT</span>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
                   </div>
                   <div className="utilities-bottom-right">
                       <h1>Your Latest NFTs</h1>

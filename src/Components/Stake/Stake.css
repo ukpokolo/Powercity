@@ -161,9 +161,18 @@
     border-bottom-right-radius: 25px;
 }
 
+.ssr-left{
+    width: 50%;
+    padding-left: 10px;
+}
+
+.ssr-right{
+    width: 50%;
+}
+
 .ssr-short{
     height: 20px;
-    width: 100px;
+    width: 40%;
     background-color: #E9F1FF;
     margin-bottom: 20px;
     border-radius: 25px;
@@ -171,10 +180,12 @@
 
 .ssr-long{
     height: 30px;
-    width: 300px;
+    max-width: 90%;
     background-color: #E9F1FF;
     margin-bottom: 20px;
     border-radius: 25px;
+    
+
 }
 .stake-right{
     border-radius: 25px;
@@ -409,7 +420,7 @@
 
     .ssr-short{
         height: 20px;
-        width: 100px;
+        width: 20%;
         background-color: #E9F1FF;
         margin-bottom: 20px;
         border-radius: 25px;
