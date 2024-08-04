@@ -1,6 +1,9 @@
 .collector{
     background-color: #F5F9FF;
 }
+#dark .collector{
+    background-color: #2A3655;
+}
 
 .collector-con{
     padding: 105px 0px;
@@ -16,11 +19,20 @@
     border-radius: 25px;
     position: relative;
 }
+#dark .collector-left{    
+    background-color: #202537;
+    padding: 20px;
+    border-radius: 25px;
+    position: relative;
+}
 
 .collector-link{
     display: flex;
     gap: 20px;
     padding-bottom: 50px;
+}
+#dark .collector-link{
+    color: #fff;
 }
 
 .collector-head{
@@ -28,11 +40,18 @@
     font-weight: 350;
     padding-bottom: 17px;
 }
+#dark .collector-head{
+    color: #fff;
+}
 
 .collector-text{
     font-size: 14px;
     opacity: .7;
     padding-bottom: 17px;
+}
+#dark .collector-text{
+    color: #fff;
+    
 }
 
 .collect-btn{
@@ -49,10 +68,19 @@
     padding-left: 1rem;
     padding-right: 1rem;
 }
+#dark .collect-fees{
+    color: #fff;
+    background-color: #2A3655;
+   
+}
 
 .earn-protocol h1{
     font-size: 1.4em;
     font-weight: 600;
+}
+#dark .earn-protocol{
+    color: #FFFFFF !important;
+    background-color: #395284 ;
 }
 
 .earn-protocol{
@@ -111,9 +139,21 @@
 .earn-protocol tbody tr:hover{
     background-color: #F5F9FF;
 }
+#dark .earn-protocol tbody td{
+    border-top: 1px solid #2A3655;
+}
+#dark .earn-protocol tbody tr:hover{
+    background-color: #2A3655;
+}
 
 .collector-right{
     background-color: #DBE9FF;
+    padding: 20px;
+    border-radius: 25px;
+    max-width: 450px;
+}
+#dark .collector-right{
+    background-color: #202537;
     padding: 20px;
     border-radius: 25px;
     max-width: 450px;
@@ -127,6 +167,10 @@
     margin-bottom: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow-x: scroll;
+}
+#dark .collector-first-card{
+    background-color: #395284;
+    color: #fff;
 }
 
 
@@ -197,6 +241,10 @@
     border-radius: 20px;
     margin-bottom: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#dark .collector-second-card{
+    background-color: #395284;
+    color: #fff;
 }
 
 .csc-text{
