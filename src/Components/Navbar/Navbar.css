@@ -206,7 +206,9 @@
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
+.nav-link.external:hover{
+  background-color: #DBE9FF !important;
+}
 #dark .nav-link:hover{
     background-color: #0F2135;
 }
@@ -270,6 +272,10 @@
 }
 #dark .nav-link.external{
   background-color: #395284 !important;
+  box-shadow: none;
+}
+#dark .nav-link.external:hover{
+  background-color: #0F2135 !important;
   box-shadow: none;
 }
 
