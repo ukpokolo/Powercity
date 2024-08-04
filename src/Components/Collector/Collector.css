@@ -113,6 +113,9 @@
     text-indent: 0;
 }
 
+#dark .arrow{
+    color: #777B87 !important;
+}
 .earn-protocol thead th{
     text-align: left;
     opacity: .7;

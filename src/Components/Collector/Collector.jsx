@@ -2,11 +2,11 @@ import React from 'react'
 import './Collector.css'
 import earn_logo_light from '../assets/earn-logo-dark.png'
 import flex_logo_light from '../assets/flex-logo-dark.png'
-import portalx_logo_light from '../assets/earn-logo-dark.png'
+import portalx_logo_light from '../assets/portalx-logo-dark.png'
 import amplifier_logo_light from '../assets/amp-ll-logo-dark.png'
 import earn_logo_dark from '../assets/earn-logo.png'
 import flex_logo_dark from '../assets/flex-logo.png'
-import portalx_logo_dark from '../assets/earn-logo.png'
+import portalx_logo_dark from '../assets/portalx-logo.png'
 import amplifier_logo_dark from '../assets/amp-ll-logo.png'
 import { ThemeContext } from '../../App';
 import { useContext } from 'react'
@@ -19,6 +19,7 @@ function Collector() {
             <div className="collector-left">
                 <div className="collector-link">
                     <p style={{textDecoration: 'Underline'}}>Home</p>
+                    <span className='arrow' style={{ margin: '0 5px' }}>&gt;</span>
                     <p>Reward Collector</p>
                 </div>
                 <h1 className='collector-head'>Reward Collector</h1>

@@ -1,9 +1,10 @@
 // Dashboard.js
-import React from 'react';
+import React, {useState} from 'react';
 import RewardPool from '../Chart/RewardPool';
 import WattPrice from '../Chart/WattPrice'
 import './Dashboard.css';
 import watt_logo from '../assets/watt.svg';
+import plp_logo from '../assets/plp.svg'
 import LockedWatt from '../Chart/LockedWatt';
 
 function Dashboard() {
@@ -15,6 +16,8 @@ function Dashboard() {
     { title: 'Total PLP Locked in Staking', price: '$355,037,889', description: 'TVL $119,482.56' },
     { title: 'Rewards Tokens', price: '7 Tokens', description: 'Tokens whitelisted for rewards: PXDC / WPLS / PLSX / LOAN USDL / HEXDC / HEX' },
   ];
+
+  const [activeTabInstantStake, setActiveTabInstantStake] = useState('watt'); // Default to 'watt' tab 
 
   return (
     <div className='dashboard'>
@@ -49,26 +52,37 @@ function Dashboard() {
           </p>
           <div className="instant-stake-tab">
             <ul>
-              <li className={'watt'}>Stake WATT</li>
-              <li className={'plp'}>Stake PLP</li>
+              <li className={activeTabInstantStake === 'watt' ? 'active' : ''}
+              onClick={() => setActiveTabInstantStake('watt')}
+              >
+                Stake WATT
+              </li>
+              <li className={activeTabInstantStake === 'plp' ? 'active' : ''}
+            onClick={() => setActiveTabInstantStake('plp')}
+            
+            >
+              Stake PLP
+              </li>
             </ul>
             <div className="ist-bottom">
               <div className="ist-search-head">
-                <p>WATT Amount</p>
+                <p>{activeTabInstantStake === 'watt' ? 'WATT Amount' : 'PLP Amount'}</p>
                 <p>$0</p>
               </div>
               <div className="dashboard-search">
                 <input type="text" />
-                <img src={watt_logo} alt="" />
+                <img src={activeTabInstantStake === 'watt' ? watt_logo : plp_logo} alt="" />
               </div>
               <div className="ist-search-bottom">
                 <div className="ist-sb-left">
-                  <p>Your WATT Balance:' : 'Your PLP Balance:</p>
-                  <p>AMP Equivalent:</p>
+                <p>{activeTabInstantStake === 'watt' ? 'Your WATT Balance:' : 'Your PLP Balance:'}</p>
+              <p>AMP Equivalent:</p>
+              <p>{activeTabInstantStake === 'watt' ? '' : 'WATT Equivalent'}</p>
                 </div>
                 <div className="ist-sb-right">
-                  <p>0 WATT</p>
-                  <p>0 AMP</p>
+                <p>{activeTabInstantStake === 'watt' ? '0 WATT' : '0 PLP'}</p>
+              <p>0 AMP</p>
+              <p>{activeTabInstantStake === 'watt' ? '' : '0 WATT'}</p>
                 </div>
               </div>
               <button>STAKE NOW!</button>
