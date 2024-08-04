@@ -13,6 +13,83 @@ function Stake() {
     setIsSortingActive(!isSortingActive);
   };
 
+  const [inputValue, setInputValue] = useState('');
+
+  const handleInputChange = (e) => {
+    const value = e.target.value;
+    // Ensure only numbers are entered
+    if (!isNaN(value)) {
+      setInputValue(value);
+    }
+  };
+
+  const formatValue = (value) => {
+    return value.toFixed(3); // Format to 3 decimal places
+  };
+
+  const calculateStakeAmount = () => {
+    const numberValue = parseFloat(inputValue) || 0;
+    const rawValue = numberValue * 0.00064307;
+  
+    if (rawValue === 0) {
+      return '$0';
+    }
+  
+    const formattedValue = rawValue.toLocaleString(undefined, { minimumFractionDigits: 3, maximumFractionDigits: 3 });
+    return `$${formattedValue}`;
+  };
+  const calculateStakePlpAmount = () => {
+    const numberValue = parseFloat(inputValue) || 0;
+    const rawValue = numberValue * 0.0003306765306765;
+  
+    if (rawValue === 0) {
+      return '$0';
+    }
+  
+    const formattedValue = rawValue.toLocaleString(undefined, { minimumFractionDigits: 3, maximumFractionDigits: 3 });
+    return `$${formattedValue}`;
+  };
+
+
+
+  const calculateStakeEquivalent = () => {
+    const numberValue = parseFloat(inputValue) || 0;
+    const rawValue2 = numberValue / 87400; // Format to 3 decimal places
+    
+    if (rawValue2 === '0.000') {
+      return '0';
+    }
+
+     const formattedValue2 = rawValue2.toLocaleString(undefined, { minimumFractionDigits: 3, maximumFractionDigits: 3 });
+    return `${formattedValue2}`
+  
+  };
+  const calculateStakePlpEquivalent = () => {
+    const numberValue = parseFloat(inputValue) || 0;
+    const rawValue3 = numberValue * 0.00001; // Format to 3 decimal places
+    
+    if (rawValue3 === '0.000') {
+      return '0';
+    }
+  
+     const formattedValue3 = rawValue3.toLocaleString(undefined, { minimumFractionDigits: 3, maximumFractionDigits: 3 });
+    return `${formattedValue3}`
+  };
+
+  const calculateWattEquivalent = () => {
+    const numberValue = parseFloat(inputValue) || 0;
+    const rawValue4 = numberValue * 0.784; // Format to 3 decimal places
+    
+    if (rawValue4 === '0.000') {
+      return '0';
+    }
+  
+   const formattedValue4 = rawValue4.toLocaleString(undefined, { minimumFractionDigits: 3, maximumFractionDigits: 3 });
+    return `${formattedValue4}`
+
+  };
+
+
   const priceData = [
     {
       head1: 'WATT Price',
@@ -123,10 +200,13 @@ function Stake() {
         <div className="cst-bottom">
         <div className="cst-search-head">
   <p>{activeTabCreateStake === 'watt' ? 'WATT Amount' : 'PLP Amount'}</p>
-  <p>$0</p>
+  <p className='amount'>{activeTabCreateStake === 'watt' ? calculateStakeAmount() : calculateStakePlpAmount()}</p>
 </div>
 <div className="stake-search">
-  <input type="text" />
+  <input type="text"
+                  value={inputValue}
+                  onChange={handleInputChange}
+                  placeholder="0" />
   <img src={activeTabCreateStake === 'watt' ? watt_logo : plp_logo} alt="" />
 </div>
 
@@ -138,8 +218,8 @@ function Stake() {
             </div>
             <div className="cst-sb-right">
               <p>{activeTabCreateStake === 'watt' ? '0 WATT' : '0 PLP'}</p>
-              <p>0 AMP</p>
-              <p>{activeTabCreateStake === 'watt' ? '' : '0 WATT'}</p>
+              <p>{activeTabCreateStake === 'watt' ? `${calculateStakeEquivalent()} AMP` : `${calculateStakePlpEquivalent()} AMP`}</p>
+              <p>{activeTabCreateStake === 'watt' ? '' : `${calculateWattEquivalent()} AMP`}</p>
 
             </div>
           </div>

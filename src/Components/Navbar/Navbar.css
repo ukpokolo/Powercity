@@ -149,8 +149,7 @@
 
 .nav-list li {
     list-style: none;
-    padding: 8px 12px 8px 25px;
-    font-size: 15px;
+    font-size: 13px;
     text-decoration: none;
     color: #000;
     display: flex;
@@ -161,33 +160,31 @@
 
 
 .nav-link svg {
-  z-index: -1;
-  top: 8px;
-    border-radius: 25px;
-    padding: 10px;
-    margin-left: 17px;
-  
+    position: absolute;
+    padding-left: 5px;
 }
 .nav-link  {
   z-index: 1;
-  padding: 10px 15px 10px 25px;
+  padding: 10px 25px 10px 30px;
   border-radius: 25px;
+  position: relative;
+  
 }
 
-.nav-link.active svg {
+/* .nav-link.active svg {
   background-color: #DBE9FF;
   z-index: -1;
   color: #000; 
-}
+} */
 
 
 #dark .nav-link.active svg {
-    background-color: #DBE9FF;
     color: #000; 
   } 
 .nav-link.active  {
   background-color: #DBE9FF;
   color: #000; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .nav-list li svg    {
@@ -267,8 +264,16 @@
     color: #fff;
 }
 
+.nav-link.external{
+  background-color: #fff !important;
+  box-shadow: none;
+}
+#dark .nav-link.external{
+  background-color: #395284 !important;
+  box-shadow: none;
+}
+
 #dark .nav-link.active svg{
-    background-color: #0F2135;
     color: #fff;
 }
 #dark .nav-link.active{
@@ -320,9 +325,9 @@
     }
 
     .nav-list li {
-        margin-left: -30px;
-        width: 100%;
-        margin-bottom: -17px;
+        margin-left: -20px;
+        width: 110%;
+        margin-bottom: 0px;
     }
     .nav-link svg{
         margin-left: -0px;

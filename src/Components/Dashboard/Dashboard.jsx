@@ -5,6 +5,7 @@ import './Dashboard.css';
 import watt_logo from '../assets/watt.svg';
 import plp_logo from '../assets/plp.svg';
 import LockedWatt from '../Chart/LockedWatt';
+import { ZAxis } from 'recharts';
 
 function Dashboard() {
   const priceData = [
@@ -42,16 +43,55 @@ function Dashboard() {
     const formattedValue = rawValue.toLocaleString(undefined, { minimumFractionDigits: 3, maximumFractionDigits: 3 });
     return `$${formattedValue}`;
   };
+  const calculateStakePlpAmount = () => {
+    const numberValue = parseFloat(inputValue) || 0;
+    const rawValue = numberValue * 0.0003306765306765;
+  
+    if (rawValue === 0) {
+      return '$0';
+    }
+  
+    const formattedValue = rawValue.toLocaleString(undefined, { minimumFractionDigits: 3, maximumFractionDigits: 3 });
+    return `$${formattedValue}`;
+  };
+
+
 
   const calculateStakeEquivalent = () => {
     const numberValue = parseFloat(inputValue) || 0;
-    const formattedValue2 = formatValue(numberValue / 87400); // Format to 3 decimal places
+    const rawValue2 = numberValue / 87400; // Format to 3 decimal places
     
-    if (formattedValue2 === '0.000') {
+    if (rawValue2 === '0.000') {
+      return '0';
+    }
+
+     const formattedValue2 = rawValue2.toLocaleString(undefined, { minimumFractionDigits: 3, maximumFractionDigits: 3 });
+    return `${formattedValue2}`
+  
+  };
+  const calculateStakePlpEquivalent = () => {
+    const numberValue = parseFloat(inputValue) || 0;
+    const rawValue3 = numberValue * 0.00001; // Format to 3 decimal places
+    
+    if (rawValue3 === '0.000') {
       return '0';
     }
   
-    return formattedValue2;
+     const formattedValue3 = rawValue3.toLocaleString(undefined, { minimumFractionDigits: 3, maximumFractionDigits: 3 });
+    return `${formattedValue3}`
+  };
+
+  const calculateWattEquivalent = () => {
+    const numberValue = parseFloat(inputValue) || 0;
+    const rawValue4 = numberValue * 0.784; // Format to 3 decimal places
+    
+    if (rawValue4 === '0.000') {
+      return '0';
+    }
+  
+   const formattedValue4 = rawValue4.toLocaleString(undefined, { minimumFractionDigits: 3, maximumFractionDigits: 3 });
+    return `${formattedValue4}`
+
   };
 
   
@@ -102,7 +142,7 @@ function Dashboard() {
             <div className="ist-bottom">
               <div className="ist-search-head">
                 <p>{activeTabInstantStake === 'watt' ? 'WATT Amount' : 'PLP Amount'}</p>
-                <p className='amount'>{activeTabInstantStake === 'watt' ? calculateStakeAmount() : '0'}</p>
+                <p className='amount'>{activeTabInstantStake === 'watt' ? calculateStakeAmount() : calculateStakePlpAmount()}</p>
               </div>
               <div className="dashboard-search">
                 <input
@@ -121,11 +161,11 @@ function Dashboard() {
                 </div>
                 <div className="ist-sb-right">
                   <p>{activeTabInstantStake === 'watt' ? `0 WATT` : '0 PLP'}</p>
-                  <p>{activeTabInstantStake === 'watt' ? `${calculateStakeEquivalent()} AMP` : '0 AMP'}</p>
-                  <p>{activeTabInstantStake === 'watt' ? '' : '0 WATT'}</p>
+                  <p>{activeTabInstantStake === 'watt' ? `${calculateStakeEquivalent()} AMP` : `${calculateStakePlpEquivalent()} AMP`}</p>
+                  <p>{activeTabInstantStake === 'watt' ? '' :  `${calculateWattEquivalent()} AMP`}</p>
                 </div>
               </div>
-              <button>STAKE NOW!</button>
+              <button>{activeTabInstantStake === 'watt' ? 'STAKE NOW!' : 'APPROVE PLP' }</button>
             </div>
           </div>
         </div>
