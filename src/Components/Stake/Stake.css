@@ -43,9 +43,21 @@
 .sort-btn{
     display: flex;
     justify-content: space-between;
-    
+    position: relative;
 }
 
+
+  
+  .sort-btn.fixed {
+    position: fixed;
+    top: 0;
+    left: 0; /* Adjust based on your layout */
+    right: 0; /* Adjust based on your layout */
+    z-index: 1000;
+    background-color: white; /* Optional: add a background color to make the button visible */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better visibility */
+  }
+  
 .sort-btn button{
     padding:15px 20px 15px 40px;
     border: none;

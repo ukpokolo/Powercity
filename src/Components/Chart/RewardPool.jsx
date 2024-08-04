@@ -87,6 +87,7 @@ function RewardPool() {
     <div className="reward-pool">
       <div className="reward-pool-header">
         <h1 className='dashboard-header'>Reward Pool</h1>
+        <p className="dashboard-text">The rewards that have been scheduled for distribution.</p>
         <div className="pool-tab">
           <ul style={{ display: 'flex' }}>
             <li onClick={() => setTimeInterval('minutes')} className={timeInterval === 'minutes' ? 'active' : ''}>Minutes</li>

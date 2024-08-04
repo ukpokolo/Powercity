@@ -95,6 +95,7 @@ function LockedWatt() {
     <div className="reward-pool">
       <div className="reward-pool-header">
         <h1 className='dashboard-header'>Locked Watt</h1>
+        <p className="dashboard-text">The total number of WATT locked in staking.</p>
         <div className="pool-tab">
           <ul style={{ display: 'flex' }}>
             <li onClick={() => setTimeInterval('minutes')} className={timeInterval === 'minutes' ? 'active' : ''}>Minutes</li>

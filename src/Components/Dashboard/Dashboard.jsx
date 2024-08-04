@@ -47,8 +47,8 @@ function Dashboard() {
           <h1 className='dashboard-header'>Instant Stake</h1>
           <p className='dashboard-text'>
             Looking to stake your tokens immediately? Stake your PLP or WATT
-            tokens into an awesome NFT right here. You can also visit the stakes
-            or <span className='underline'>utilities</span> pages for comprehensive management.
+            tokens into an awesome NFT right here. You can also visit the <span className='underline' style={{paddingRight: '5px'}}>stakes</span>
+              or <span className='underline'>utilities</span> pages for comprehensive management.
           </p>
           <div className="instant-stake-tab">
             <ul>
@@ -67,7 +67,7 @@ function Dashboard() {
             <div className="ist-bottom">
               <div className="ist-search-head">
                 <p>{activeTabInstantStake === 'watt' ? 'WATT Amount' : 'PLP Amount'}</p>
-                <p>$0</p>
+                <p className='stake-amount'>$0</p>
               </div>
               <div className="dashboard-search">
                 <input type="text" />
@@ -80,8 +80,8 @@ function Dashboard() {
               <p>{activeTabInstantStake === 'watt' ? '' : 'WATT Equivalent'}</p>
                 </div>
                 <div className="ist-sb-right">
-                <p>{activeTabInstantStake === 'watt' ? '0 WATT' : '0 PLP'}</p>
-              <p>0 AMP</p>
+                <p className='stake-balance'>{activeTabInstantStake === 'watt' ? '0 WATT' : '0 PLP'}</p>
+              <p className='stake-equivalent'>0 AMP</p>
               <p>{activeTabInstantStake === 'watt' ? '' : '0 WATT'}</p>
                 </div>
               </div>

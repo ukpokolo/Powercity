@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './Collector.css'
 import earn_logo_light from '../assets/earn-logo-dark.png'
 import flex_logo_light from '../assets/flex-logo-dark.png'
@@ -18,7 +19,9 @@ function Collector() {
         <div className="collector-con">
             <div className="collector-left">
                 <div className="collector-link">
-                    <p style={{textDecoration: 'Underline'}}>Home</p>
+                <Link to="/" className='custom-link' style={{ textDecoration: 'none',  }}>
+            <p style={{ textDecoration: 'underline' }}>Home</p>
+          </Link>
                     <span className='arrow' style={{ margin: '0 5px' }}>&gt;</span>
                     <p>Reward Collector</p>
                 </div>

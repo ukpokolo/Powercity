@@ -6,7 +6,7 @@ import { ThemeContext } from '../../App';
 
 function WattPrice() {
   const { theme } = useContext(ThemeContext);
-  
+
   const [timeInterval, setTimeInterval] = useState('minutes');
 
   const generateTimeSeriesData = () => {
@@ -89,6 +89,7 @@ function WattPrice() {
     <div className="reward-pool">
       <div className="reward-pool-header">
         <h1 className='dashboard-header'>Watt Price</h1>
+        <p className="dashboard-text">The price of one WATT token over time.</p>
         <div className="pool-tab">
           <ul style={{ display: 'flex' }}>
             <li onClick={() => setTimeInterval('minutes')} className={timeInterval === 'minutes' ? 'active' : ''}>Minutes</li>

@@ -29,10 +29,17 @@
 .collector-link{
     display: flex;
     gap: 20px;
+    color: #000;
     padding-bottom: 50px;
 }
 #dark .collector-link{
-    color: #fff;
+    color: #fff !important;
+}
+#dark  .custom-link:visited{
+    color: #fff !important;
+}
+  .custom-link:visited{
+    color: #000 !important;
 }
 
 .collector-head{
@@ -259,9 +266,7 @@
         height: 50px;
         position: relative;
     }
-    .collect-fees{
-        position: fixed;
-    }
+    
     
 }
 @media (min-width:1278px) {

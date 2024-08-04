@@ -188,6 +188,7 @@
 
 .instant-stake-tab li.active{
   background-color: #FFFFFF;
+  color: #000 !important;
   
 }
 
@@ -309,7 +310,8 @@
     background-color: white;
     font-weight: bold;
     border-radius: 10px;
-    color: #fff !important;
+    color: #000 !important;
+    font-size: 14px;
   }
 
 
