@@ -162,7 +162,13 @@
 
 .metamask-table table{
         width: 100%;
-        border: 1px solid red;
+}
+
+.metamask-table table td {
+        width: 100%;
+}
+.metamask-table table tr td:nth-child(2){
+        text-align: end;
 }
 
 .mmt-left{
@@ -186,14 +192,13 @@
 .mmf-button{
     background-color: rgba(219, 233, 255, .5);
     border: none;
-    height: 2cap;
     border-radius: 25px;
     font-weight: 800;
     text-align: end;
-    width: fit-content;
-    border: 1px solid red;
-    padding-right: 10px;
-    padding-bottom: 15px;
+    width: max-content;
+    padding: 5px 10px;
+
+    position: relative;
  }
 #dark .mmf-button{
     background-color: #202537;
@@ -332,15 +337,14 @@
     width: 15px;
     margin-right: -15px;
     color: #60A5FA;
-    
-    top: 5px;
+    position: absolute;
+    top: 7px;;
 }
 #dark .mmf-button svg{
     width: 15px;
     margin-right: -15px;
     color: #406598;
     
-    top: 5px;
 }
 
 .upr-button svg{
@@ -453,5 +457,16 @@ align-items: center
 
 }
     
+    
+}
+
+@media (max-width:430px) {
+
+    .metamask-table tbody:nth-last-child(1){
+        
+
+        display: flex;
+        flex-direction: column;
+     }
     
 }
