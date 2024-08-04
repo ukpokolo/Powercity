@@ -28,9 +28,10 @@
 
 .collector-link{
     display: flex;
-    gap: 20px;
+    gap: 5px;
     color: #000;
     padding-bottom: 50px;
+    font-size: 14px;
 }
 #dark .collector-link{
     color: #fff !important;
@@ -120,6 +121,9 @@
     text-indent: 0;
 }
 
+.arrow{
+    color: #909BAF;
+}
 #dark .arrow{
     color: #777B87 !important;
 }
