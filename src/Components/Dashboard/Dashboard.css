@@ -140,6 +140,10 @@
     list-style: none;
 }
 
+.ist-sb-right{
+  text-align: end;
+}
+
 .ist-bottom{
     background-color: #FFFFFF;
     padding: 30px;

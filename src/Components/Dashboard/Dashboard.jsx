@@ -45,9 +45,16 @@ function Dashboard() {
 
   const calculateStakeEquivalent = () => {
     const numberValue = parseFloat(inputValue) || 0;
-    return formatValue(numberValue / 87400); // Format to 3 decimal places
+    const formattedValue2 = formatValue(numberValue / 87400); // Format to 3 decimal places
+    
+    if (formattedValue2 === '0.000') {
+      return '0';
+    }
+  
+    return formattedValue2;
   };
 
+  
   return (
     <div className='dashboard'>
       <div className="dashboard-con">
