@@ -1,9 +1,12 @@
 // components/WattPrice.js
-import React, { useState } from 'react';
+import React, { useState , useContext} from 'react';
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import '../Navbar/Navbar.css';
+import { ThemeContext } from '../../App';
 
 function WattPrice() {
+  const { theme } = useContext(ThemeContext);
+  
   const [timeInterval, setTimeInterval] = useState('minutes');
 
   const generateTimeSeriesData = () => {
@@ -101,8 +104,8 @@ function WattPrice() {
             >
               <defs>
                 <linearGradient id="colorTotal" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor= "#DDE8FC" stopOpacity={1} />
-                  <stop offset="100%" stopColor="#ffffff" stopOpacity={1} />
+                <stop offset="0%" stopColor={theme === "dark" ? "#395284" : "#9BBAF6"}  stopOpacity={theme === "dark" ? .5 : 1} />
+                <stop offset="100%" stopColor="#ffffff" stopOpacity={theme === "dark" ? .1 : 1} />
                 </linearGradient>
               </defs>
               <XAxis
