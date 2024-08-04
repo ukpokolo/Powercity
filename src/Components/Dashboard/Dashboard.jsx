@@ -117,7 +117,7 @@ function Dashboard() {
                 <div className="ist-sb-left">
                   <p>{activeTabInstantStake === 'watt' ? 'Your WATT Balance:' : 'Your PLP Balance:'}</p>
                   <p>AMP Equivalent:</p>
-                  <p>{activeTabInstantStake === 'watt' ? 'Stake Equivalent:' : ''}</p>
+                  <p>{activeTabInstantStake === 'watt' ? '' : 'WATT Equivalent'}</p>
                 </div>
                 <div className="ist-sb-right">
                   <p>{activeTabInstantStake === 'watt' ? `0 WATT` : '0 PLP'}</p>
