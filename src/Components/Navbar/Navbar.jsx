@@ -5,6 +5,7 @@ import nav_gif from '../assets/pc-logo.gif';
 import nav_logo from '../assets/core.png';
 import { ThemeContext } from '../../App';
 
+
 function Navbar() {
   const [isNavVisible, setIsNavVisible] = useState(false);
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -97,7 +98,7 @@ function Navbar() {
         </ul>
       </div>
       <div className="nav-right">
-        <button>Connect Wallet</button>
+      <button onClick={() => alert('button clicked')}>Connect Wallet</button>
       </div>
       
       <label class="switch">
