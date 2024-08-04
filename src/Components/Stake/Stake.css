@@ -107,7 +107,7 @@
 }
 .loading-svg svg:hover{
     display: inline-block;
-    animation: rotate 1s linear infinite;
+    animation: rotate 1s linear ;
 }
 
 @keyframes rotate {

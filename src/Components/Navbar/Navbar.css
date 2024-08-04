@@ -3,7 +3,7 @@
     display: inline-block;
     width: 60px;
     height: 34px;
-    right: 20px;
+    right: 50px;
     bottom: 20px;
   }
   
@@ -39,6 +39,39 @@
     background-color: #93BBFB;
     -webkit-transition: .4s;
     transition: .4s;
+  }
+
+  .switch svg{
+    width: 30px;
+    position: absolute;
+    right: -25px;
+    top: -2px;
+    color: #fff;
+  }
+
+  @keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(5deg);
+    }
+}
+
+  #dark .switch  .light-mode{
+    display: none;
+  }
+  #light .switch  .light-mode{
+    color: #000;
+    animation: rotate 1s linear 
+  }
+
+  #light .switch .dark-mode{
+    display: none;
+  }
+
+  #dark .switch .dark-mode{
+    animation: rotate 1s linear 
   }
   
   input:checked + .slider {
