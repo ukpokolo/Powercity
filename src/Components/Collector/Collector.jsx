@@ -1,11 +1,18 @@
 import React from 'react'
 import './Collector.css'
-import earn_logo from '../assets/earn-logo-dark.png'
-import flex_logo from '../assets/flex-logo-dark.png'
-import portalx_logo from '../assets/earn-logo-dark.png'
-import amplifier_logo from '../assets/amp-ll-logo-dark.png'
+import earn_logo_light from '../assets/earn-logo-dark.png'
+import flex_logo_light from '../assets/flex-logo-dark.png'
+import portalx_logo_light from '../assets/earn-logo-dark.png'
+import amplifier_logo_light from '../assets/amp-ll-logo-dark.png'
+import earn_logo_dark from '../assets/earn-logo.png'
+import flex_logo_dark from '../assets/flex-logo.png'
+import portalx_logo_dark from '../assets/earn-logo.png'
+import amplifier_logo_dark from '../assets/amp-ll-logo.png'
+import { ThemeContext } from '../../App';
+import { useContext } from 'react'
 
 function Collector() {
+  const { theme } = useContext(ThemeContext);
   return (
     <div className='collector'>
         <div className="collector-con">
@@ -23,7 +30,7 @@ function Collector() {
                 <div className="earn-protocol">
                     <div className="earn-protocol-top">
                         <h1>EARN Protocol</h1>
-                        <img src={earn_logo} alt="" />
+                        <img src={theme === 'light' ? earn_logo_light : earn_logo_dark} alt="" />
                     </div>
                     
                     <table>
@@ -38,13 +45,13 @@ function Collector() {
                         <tbody>
                             <tr>
                                 <td>PXDC Stable Token (PXDC)</td>
-                                <td>0</td>
-                                <td>0</td>
+                                <td>93,109.886</td>
+                                <td>3.615</td>
                             </tr>
                             <tr>
                                 <td>PulseX (PLSX)</td>
-                                <td>0</td>
-                                <td>0</td>
+                                <td>2,387,954,904.488</td>
+                                <td>9,128.929</td>
                             </tr>
                             
                         </tbody>
@@ -52,8 +59,8 @@ function Collector() {
                 </div>
                 <div className="earn-protocol">
                 <div className="earn-protocol-top">
-                        <h1>EARN Protocol</h1>
-                        <img src={earn_logo} alt="" />
+                        <h1>FLEX Protocol</h1>
+                        <img src={theme === 'light' ? flex_logo_light : flex_logo_dark} alt="" />
                     </div>
                     <table>
                         <thead>
@@ -67,12 +74,12 @@ function Collector() {
                         <tbody>
                             <tr>
                                 <td>HEXDC Stable Token (HEXDC)</td>
-                                <td>0</td>
-                                <td>0</td>
+                                <td>11,924.554</td>
+                                <td>0.138</td>
                             </tr>
                             <tr>
                                 <td>HeX (HEX)</td>
-                                <td>0</td>
+                                <td>509,615.982</td>
                                 <td>0</td>
                             </tr>
                             
@@ -81,8 +88,8 @@ function Collector() {
                 </div>
                 <div className="earn-protocol">
                 <div className="earn-protocol-top">
-                        <h1>EARN Protocol</h1>
-                        <img src={earn_logo} alt="" />
+                        <h1>PortalX Bridge</h1>
+                        <img src={theme === 'light' ? portalx_logo_light : portalx_logo_dark} alt="" />
                     </div>
                     <table>
                         <thead>
@@ -96,12 +103,42 @@ function Collector() {
                         <tbody>
                             <tr>
                                 <td>Wrapped Pulse (WPLS)</td>
+                                <td>479,934,111.347</td>
                                 <td>0</td>
+                            </tr>
+                            
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <div className="earn-protocol">
+                <div className="earn-protocol-top">
+                        <h1>Amplifier for LiquidLoans</h1>
+                        <img src={theme === 'light' ? amplifier_logo_light : amplifier_logo_dark} alt="" />
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Token</th>
+                                <th>Fees Collected</th>
+                                <th>Fees Pending</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>USDL Stablecoin (USDL)</td>
+                                <td>0.045</td>
                                 <td>0</td>
                             </tr>
                             <tr>
-                                <td>PulseX (PLSX)+</td>
+                                <td>Loan Token (LOAN)</td>
+                                <td>23,029.545</td>
                                 <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Wrapped Pulse (WPLS)</td>
+                                <td>1,000</td>
                                 <td>0</td>
                             </tr>
                             
