@@ -1,10 +1,9 @@
-// Dashboard.js
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import RewardPool from '../Chart/RewardPool';
-import WattPrice from '../Chart/WattPrice'
+import WattPrice from '../Chart/WattPrice';
 import './Dashboard.css';
 import watt_logo from '../assets/watt.svg';
-import plp_logo from '../assets/plp.svg'
+import plp_logo from '../assets/plp.svg';
 import LockedWatt from '../Chart/LockedWatt';
 
 function Dashboard() {
@@ -17,7 +16,37 @@ function Dashboard() {
     { title: 'Rewards Tokens', price: '7 Tokens', description: 'Tokens whitelisted for rewards: PXDC / WPLS / PLSX / LOAN USDL / HEXDC / HEX' },
   ];
 
-  const [activeTabInstantStake, setActiveTabInstantStake] = useState('watt'); // Default to 'watt' tab 
+  const [activeTabInstantStake, setActiveTabInstantStake] = useState('watt'); // Default to 'watt' tab
+  const [inputValue, setInputValue] = useState('');
+
+  const handleInputChange = (e) => {
+    const value = e.target.value;
+    // Ensure only numbers are entered
+    if (!isNaN(value)) {
+      setInputValue(value);
+    }
+  };
+
+  const formatValue = (value) => {
+    return value.toFixed(3); // Format to 3 decimal places
+  };
+
+  const calculateStakeAmount = () => {
+    const numberValue = parseFloat(inputValue) || 0;
+    const rawValue = numberValue * 0.00064307;
+  
+    if (rawValue === 0) {
+      return '$0';
+    }
+  
+    const formattedValue = rawValue.toLocaleString(undefined, { minimumFractionDigits: 3, maximumFractionDigits: 3 });
+    return `$${formattedValue}`;
+  };
+
+  const calculateStakeEquivalent = () => {
+    const numberValue = parseFloat(inputValue) || 0;
+    return formatValue(numberValue / 87400); // Format to 3 decimal places
+  };
 
   return (
     <div className='dashboard'>
@@ -47,42 +76,46 @@ function Dashboard() {
           <h1 className='dashboard-header'>Instant Stake</h1>
           <p className='dashboard-text'>
             Looking to stake your tokens immediately? Stake your PLP or WATT
-            tokens into an awesome NFT right here. You can also visit the <span className='underline' style={{paddingRight: '5px'}}>stakes</span>
+            tokens into an awesome NFT right here. You can also visit the <span className='underline' style={{ paddingRight: '5px' }}>stakes</span>
               or <span className='underline'>utilities</span> pages for comprehensive management.
           </p>
           <div className="instant-stake-tab">
             <ul>
               <li className={activeTabInstantStake === 'watt' ? 'active' : ''}
-              onClick={() => setActiveTabInstantStake('watt')}
+                onClick={() => setActiveTabInstantStake('watt')}
               >
                 Stake WATT
               </li>
               <li className={activeTabInstantStake === 'plp' ? 'active' : ''}
-            onClick={() => setActiveTabInstantStake('plp')}
-            
-            >
-              Stake PLP
+                onClick={() => setActiveTabInstantStake('plp')}
+              >
+                Stake PLP
               </li>
             </ul>
             <div className="ist-bottom">
               <div className="ist-search-head">
                 <p>{activeTabInstantStake === 'watt' ? 'WATT Amount' : 'PLP Amount'}</p>
-                <p className='stake-amount'>$0</p>
+                <p className='amount'>{activeTabInstantStake === 'watt' ? calculateStakeAmount() : '0'}</p>
               </div>
               <div className="dashboard-search">
-                <input type="text" />
+                <input
+                  type="text"
+                  value={inputValue}
+                  onChange={handleInputChange}
+                  placeholder="0"
+                />
                 <img src={activeTabInstantStake === 'watt' ? watt_logo : plp_logo} alt="" />
               </div>
               <div className="ist-search-bottom">
                 <div className="ist-sb-left">
-                <p>{activeTabInstantStake === 'watt' ? 'Your WATT Balance:' : 'Your PLP Balance:'}</p>
-              <p>AMP Equivalent:</p>
-              <p>{activeTabInstantStake === 'watt' ? '' : 'WATT Equivalent'}</p>
+                  <p>{activeTabInstantStake === 'watt' ? 'Your WATT Balance:' : 'Your PLP Balance:'}</p>
+                  <p>AMP Equivalent:</p>
+                  <p>{activeTabInstantStake === 'watt' ? 'Stake Equivalent:' : ''}</p>
                 </div>
                 <div className="ist-sb-right">
-                <p className='stake-balance'>{activeTabInstantStake === 'watt' ? '0 WATT' : '0 PLP'}</p>
-              <p className='stake-equivalent'>0 AMP</p>
-              <p>{activeTabInstantStake === 'watt' ? '' : '0 WATT'}</p>
+                  <p>{activeTabInstantStake === 'watt' ? `0 WATT` : '0 PLP'}</p>
+                  <p>{activeTabInstantStake === 'watt' ? `${calculateStakeEquivalent()} AMP` : '0 AMP'}</p>
+                  <p>{activeTabInstantStake === 'watt' ? '' : '0 WATT'}</p>
                 </div>
               </div>
               <button>STAKE NOW!</button>
@@ -92,7 +125,7 @@ function Dashboard() {
 
         <RewardPool />
         <WattPrice />
-        <LockedWatt/>
+        <LockedWatt />
       </div>
     </div>
   );
