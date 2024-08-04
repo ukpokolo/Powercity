@@ -36,7 +36,7 @@ function Utilities() {
                             <p className='utc-text'>0 <span className="grey">PLS</span></p>
                           </div>
                         </div>
-                        <button className="utc-button">USE WRAPPER</button>
+                        <button onClick={() => alert('Please Connect your wallet')} className="utc-button">USE WRAPPER</button>
                     </div>
                     <div className="utilites-top-card">
                         <h1>Zapper</h1>
@@ -51,7 +51,7 @@ function Utilities() {
                             <p className='utc-text'>0 <span className="grey">WATT</span></p>
                           </div>
                         </div>
-                        <button className="utc-button">USE ZAPPER</button>
+                        <button onClick={() => alert('Please Connect your wallet')} className="utc-button">USE ZAPPER</button>
                     </div>                    
                 </div>  
                 <div className="utilities-bottom">

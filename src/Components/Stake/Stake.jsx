@@ -223,7 +223,7 @@ function Stake() {
 
             </div>
           </div>
-          <button>STAKE NOW!</button>
+          <button onClick={() => alert('Please Connect your wallet')} >STAKE NOW!</button>
         </div>
       </div>
     </div>

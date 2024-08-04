@@ -165,7 +165,7 @@ function Dashboard() {
                   <p>{activeTabInstantStake === 'watt' ? '' :  `${calculateWattEquivalent()} AMP`}</p>
                 </div>
               </div>
-              <button>{activeTabInstantStake === 'watt' ? 'STAKE NOW!' : 'APPROVE PLP' }</button>
+      <button onClick={() => alert('Please Connect your wallet')} >{activeTabInstantStake === 'watt' ? 'STAKE NOW!' : 'APPROVE PLP' }</button>
             </div>
           </div>
         </div>
