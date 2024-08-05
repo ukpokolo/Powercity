@@ -81,6 +81,17 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-weight: bolder;
 }
+
+ .collect-fees:hover{
+    background-color: #DBE9FF;
+    cursor: pointer;
+    
+}
+
+#dark .collect-fees:hover{
+    background-color: #202537;
+    
+}
 #dark .collect-fees{
     color: #fff;
     background-color: #2A3655;
