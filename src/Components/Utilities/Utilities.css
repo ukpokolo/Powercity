@@ -98,6 +98,7 @@
     border-radius: 25px;
     margin-top: 17px;
     color: #000;
+    cursor: pointer;
 }
 #dark .utc-button{
     background-color: #202537;
@@ -105,6 +106,9 @@
 }
 #dark .utc-button:hover {
     background-color: #131620;
+}
+.utc-button:hover {
+   background-color: #DBE9FF;
 }
 
 .utilities-left-con{
@@ -203,6 +207,12 @@
     padding: 5px 10px;
 
     position: relative;
+ }
+.mmf-button:hover{
+    background-color: #DBE9FF;
+ }
+#dark .mmf-button:hover{
+    background-color: #131620;
  }
 #dark .mmf-button{
     background-color: #202537;
@@ -350,6 +360,13 @@
     color: #406598;
     
 }
+
+.upr-button:hover{
+    background-color: #DBE9FF;
+ }
+#dark .upr-button:hover{
+    background-color: #131620;
+ }
 
 .upr-button svg{
     width: 15px;
