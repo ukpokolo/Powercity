@@ -12,6 +12,14 @@
     
 }
 
+#light button{
+  cursor:pointer !important;
+}
+
+#dark button{
+  cursor:pointer !important;
+}
+
 .dashboard-search {
     position: relative;
 }
