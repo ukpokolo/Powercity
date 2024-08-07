@@ -12,8 +12,9 @@
     
 }
 
+/* CODE TO MAKE ALL BUTTONS CURSOR POINTER */
 #light button{
-  cursor:pointer !important;
+  cursor:pointer !important; 
 }
 
 #dark button{
@@ -65,6 +66,7 @@
     border-radius: 15px;
     padding: 10px 0;   
     flex: 1 1 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #dark .prices-box{
